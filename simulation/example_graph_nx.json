@@ -1,0 +1,193 @@
+[
+  {
+    "id": 0,
+    "data": {
+      "memory": 256,
+      "time": 2
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 1,
+        "data": {
+          "size": 100
+        }
+      },
+      {
+        "nodeTo": 2,
+        "data": {
+          "size": 100
+        }
+      },
+      {
+        "nodeTo": 3,
+        "data": {
+          "size": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "data": {
+      "memory": 256,
+      "time": 3
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 4,
+        "data": {
+          "size": 100
+        }
+      },
+      {
+        "nodeTo": 5,
+        "data": {
+          "size": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "data": {
+      "memory": 256,
+      "time": 4
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 6,
+        "data": {
+          "size": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "data": {
+      "memory": 256,
+      "time": 6
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 7,
+        "data": {
+          "size": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "data": {
+      "memory": 256,
+      "time": 1
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 8,
+        "data": {
+          "size": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "data": {
+      "memory": 256,
+      "time": 2
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 8,
+        "data": {
+          "size": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "data": {
+      "memory": 256,
+      "time": 3
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 8,
+        "data": {
+          "size": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "data": {
+      "memory": 256,
+      "time": 4
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 9,
+        "data": {
+          "size": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "data": {
+      "memory": 256,
+      "time": 5
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 10,
+        "data": {
+          "size": 100
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "data": {
+      "memory": 256,
+      "time": 3
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 10,
+        "data": {
+          "size": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "data": {
+      "memory": 256,
+      "time": 7
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 11,
+        "data": {
+          "size": 200
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "data": {
+      "memory": 256,
+      "time": 2
+    },
+    "adjacencies": []
+  }
+]

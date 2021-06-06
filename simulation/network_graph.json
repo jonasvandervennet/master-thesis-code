@@ -1,0 +1,263 @@
+[
+  {
+    "id": 0,
+    "name": 0,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 9,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": 9,
+    "data": {
+      "server": false
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 0,
+        "data": {
+          "bandwidth": 10
+        }
+      },
+      {
+        "nodeTo": 12,
+        "data": {
+          "bandwidth": 40
+        }
+      },
+      {
+        "nodeTo": 1,
+        "data": {
+          "bandwidth": 10
+        }
+      },
+      {
+        "nodeTo": 2,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": 12,
+    "data": {
+      "server": false
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 9,
+        "data": {
+          "bandwidth": 40
+        }
+      },
+      {
+        "nodeTo": 10,
+        "data": {
+          "bandwidth": 40
+        }
+      },
+      {
+        "nodeTo": 11,
+        "data": {
+          "bandwidth": 40
+        }
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "name": 1,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 9,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": 2,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 9,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": 10,
+    "data": {
+      "server": false
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 12,
+        "data": {
+          "bandwidth": 40
+        }
+      },
+      {
+        "nodeTo": 3,
+        "data": {
+          "bandwidth": 10
+        }
+      },
+      {
+        "nodeTo": 4,
+        "data": {
+          "bandwidth": 10
+        }
+      },
+      {
+        "nodeTo": 5,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": 11,
+    "data": {
+      "server": false
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 12,
+        "data": {
+          "bandwidth": 40
+        }
+      },
+      {
+        "nodeTo": 6,
+        "data": {
+          "bandwidth": 10
+        }
+      },
+      {
+        "nodeTo": 7,
+        "data": {
+          "bandwidth": 10
+        }
+      },
+      {
+        "nodeTo": 8,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": 3,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 10,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": 4,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 10,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": 5,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 10,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": 6,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 11,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": 7,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 11,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": 8,
+    "data": {
+      "server": true
+    },
+    "adjacencies": [
+      {
+        "nodeTo": 11,
+        "data": {
+          "bandwidth": 10
+        }
+      }
+    ]
+  }
+]
