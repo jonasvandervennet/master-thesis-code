@@ -1,0 +1,24 @@
+whisk:
+  ingress:
+    type: NodePort
+    # get this internal IP from: kubectl describe node kind-worker | grep InternalIP: | awk '{print $2}'
+    apiHostName: 172.19.0.3
+    apiHostPort: 31001
+
+invoker:
+  containerFactory:
+    impl: "kubernetes"
+    kubernetes:
+      replicaCount: 3
+
+controller:
+  imageName: "whisk/controller"
+  imageTag: "latest"
+
+nginx:
+  httpsNodePort: 31001
+
+# https://medium.com/@ansjin/openwhisk-deployment-on-a-kubernetes-cluster-7fd3fc2f3726
+metrics:
+  prometheusEnabled: true
+  userMetricsEnabled: true

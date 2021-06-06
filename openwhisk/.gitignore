@@ -1,0 +1,5 @@
+.gradle/
+.vscode/
+
+# composition intermediate results
+compositions/*-composition.json

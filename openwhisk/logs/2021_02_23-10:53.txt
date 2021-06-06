@@ -1,0 +1,1671 @@
+[2021-02-23T09:53:12.553Z] [INFO] Slf4jLogger started
+[2021-02-23T09:53:12.853Z] [WARN] Failed to attach the instrumentation because the Kamon Bundle is not present on the classpath
+[2021-02-23T09:53:12.966Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-23T09:53:13.159Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-23T09:53:13.159Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-23T09:53:13.160Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-23T09:53:13.160Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-23T09:53:13.160Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-23T09:53:13.160Z] [INFO] [#tid_sid_unknown] [Config] environment set value for kafka.hosts
+[2021-02-23T09:53:13.160Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-23T09:53:13.509Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] completed0 already exists and the user can see it, skipping creation.
+[2021-02-23T09:53:13.611Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] health already exists and the user can see it, skipping creation.
+[2021-02-23T09:53:13.695Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] cacheInvalidation already exists and the user can see it, skipping creation.
+[2021-02-23T09:53:13.776Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] events already exists and the user can see it, skipping creation.
+[2021-02-23T09:53:13.882Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup_counter:734]
+[2021-02-23T09:53:14.387Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-23T09:53:14.569Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-23T09:53:14.785Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/invokerHealthTestAction0) [marker:database_cacheMiss_counter:1637]
+[2021-02-23T09:53:14.811Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/invokerHealthTestAction0' [marker:database_getDocument_start:1664]
+[2021-02-23T09:53:15.032Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore]  [marker:database_getDocument_finish:1885:221]
+[2021-02-23T09:53:15.072Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] write initiated on existing cache entry, invalidating CacheKey(whisk.system/invokerHealthTestAction0), tid sid_loadbalancer, state WriteInProgress
+[2021-02-23T09:53:15.076Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/invokerHealthTestAction0, rev: 6-d341ec13fb6c1ba10b94377e2300c379' [marker:database_saveDocument_start:1926]
+[2021-02-23T09:53:15.107Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore]  [marker:database_saveDocument_finish:1960:34]
+[2021-02-23T09:53:15.109Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] write all done, caching CacheKey(whisk.system/invokerHealthTestAction0) Cached
+[2021-02-23T09:53:15.109Z] [INFO] [#tid_sid_loadbalancer] [InvokerPool] test action for invoker health now exists
+[2021-02-23T09:53:15.194Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: ThesisNetworkBalancer
+[2021-02-23T09:53:15.196Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-23T09:53:15.264Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-23T09:53:15.332Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] registered a new invoker: invoker1
+[2021-02-23T09:53:15.345Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2198]
+[2021-02-23T09:53:15.346Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] registered a new invoker: invoker0
+[2021-02-23T09:53:15.347Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] registered a new invoker: invoker2
+[2021-02-23T09:53:15.347Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker0 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2200]
+[2021-02-23T09:53:15.347Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker2 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2200]
+Uncaught error from thread [Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-3]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+controller-actor-system-akka.actor.default-dispatcher-32]: java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+null, shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-23]: 	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+]
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+java.lang.ExceptionInInitializerError
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at java.base/java.lang.J9VMInternals.ensureError(J9VMInternals.java:186)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at java.base/java.lang.J9VMInternals.recordInitializationFailure(J9VMInternals.java:175)	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)	... 35 more
+
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+
+	at scala.Option.map(Option.scala:230)
+	at scala.Option.map(Option.scala:230)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)	at akka.actor.ActorCell.create(ActorCell.scala:674)
+
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.actor.FSM.initialize$(FSM.scala:564)	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	... 35 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	... 35 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+[2021-02-23T09:53:15.397Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[2021-02-23T09:53:15.400Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[2021-02-23T09:53:15.400Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[2021-02-23T09:53:15.400Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+[2021-02-23T09:53:15.401Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+[2021-02-23T09:53:15.401Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+[2021-02-23T09:53:15.401Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2254]
+[2021-02-23T09:53:15.402Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker2 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2254]
+[2021-02-23T09:53:15.402Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker0 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2254]
+Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-36]: Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-25]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+[2021-02-23T09:53:15.403Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+[2021-02-23T09:53:15.403Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+[2021-02-23T09:53:15.403Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+[2021-02-23T09:53:15.403Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2256]
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+]
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+[2021-02-23T09:53:15.403Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)Uncaught error from thread [
+
+controller-actor-system-akka.actor.default-dispatcher-30]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-34]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+[2021-02-23T09:53:15.405Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+[2021-02-23T09:53:15.405Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+[2021-02-23T09:53:15.405Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2257]
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-5]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+[2021-02-23T09:53:15.405Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+Uncaught error from thread [
+Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-4]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+[2021-02-23T09:53:15.406Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+[2021-02-23T09:53:15.406Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker2 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2257]
+[2021-02-23T09:53:15.406Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker0 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2257]
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+[2021-02-23T09:53:15.407Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+[2021-02-23T09:53:15.407Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-31]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled forUncaught error from thread [
+[2021-02-23T09:53:15.407Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2258]
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)controller-actor-system-akka.actor.default-dispatcher-35	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)]: 	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), 	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[
+controller-actor-system
+]
+
+[2021-02-23T09:53:15.407Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.Option.map(Option.scala:230)
+
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+[2021-02-23T09:53:15.407Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+[2021-02-23T09:53:15.407Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker0 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2259]
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-27]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+[2021-02-23T09:53:15.408Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+
+
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+
+	at akka.actor.FSM.initialize(FSM.scala:565)	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+[2021-02-23T09:53:15.408Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields	at akka.actor.Props.newActor(Props.scala:212)
+
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)Uncaught error from thread [
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+[2021-02-23T09:53:15.411Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:2259]
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)	at akka.actor.ActorCell.create(ActorCell.scala:674)
+
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+
+[2021-02-23T09:53:15.411Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[2021-02-23T09:53:15.412Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+[2021-02-23T09:53:15.412Z] [ERROR] head of empty list
+java.util.NoSuchElementException: head of empty list
+	at scala.collection.immutable.Nil$.head(List.scala:430)
+	at scala.collection.immutable.Nil$.head(List.scala:427)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:612)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:581)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:268)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:229)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+[2021-02-23T09:53:15.413Z] [ERROR] changing Recreate into Create after java.util.NoSuchElementException: head of empty list
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: 	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+controller-actor-system-akka.actor.default-dispatcher-24]: 	at scala.Option.map(Option.scala:230)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+
+	at akka.actor.FSM.initialize(FSM.scala:565), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)	at akka.actor.FSM.initialize$(FSM.scala:564)java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)]
+ ActorSystem[java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)controller-actor-system
+]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at scala.Option.map(Option.scala:230)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)	at akka.actor.FSM.handleTransition(FSM.scala:650)
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+controller-actor-system-akka.actor.default-dispatcher-37]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.actor.FSM.makeTransition$(FSM.scala:727)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+, 	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at akka.actor.FSM.initialize(FSM.scala:565)shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)	at akka.actor.FSM.initialize$(FSM.scala:564)
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)	at akka.actor.FSM.makeTransition(FSM.scala:736)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at akka.actor.FSM.initialize(FSM.scala:565)	at akka.actor.Props.newActor(Props.scala:212)
+
+
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)	at akka.actor.ActorCell.create(ActorCell.scala:674)
+
+
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+
+
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)	at akka.actor.Props.newActor(Props.scala:212)
+
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+
+
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)	at akka.actor.ActorCell.create(ActorCell.scala:674)
+
+
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at scala.collection.immutable.List.foreach(List.scala:392)	at akka.actor.FSM.handleTransition(FSM.scala:650)	at akka.actor.Props.newActor(Props.scala:212)
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)	at scala.sys.package$.error(package.scala:30)
+
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)	at akka.actor.FSM.initialize$(FSM.scala:564)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.FSM.initialize$(FSM.scala:564)	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)	at akka.actor.FSM.makeTransition$(FSM.scala:727)	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+
+	at akka.actor.Props.newActor(Props.scala:212)	at akka.actor.FSM.initialize(FSM.scala:565)
+
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)	at akka.actor.FSM.initialize$(FSM.scala:564)
+
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+
+
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+
+	... 8 more	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+
+Caused by: 	at akka.actor.FSM.initialize(FSM.scala:565)java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at scala.sys.package$.error(package.scala:30)	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+
+	... 42 more	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)Uncaught error from thread [
+controller-actor-system-akka.actor.default-dispatcher-2]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+, shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)Uncaught error from thread [
+ ActorSystem[	at akka.actor.Props.newActor(Props.scala:212)controller-actor-system
+]
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)controller-actor-system-akka.actor.default-dispatcher-26
+]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.actor.ActorCell.create(ActorCell.scala:674), 
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447) ActorSystem[
+controller-actor-system	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+Uncaught error from thread [	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+]
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+
+controller-actor-system-akka.actor.default-dispatcher-33	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+]: 	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293), 
+shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for	at akka.dispatch.Mailbox.run(Mailbox.scala:228) ActorSystem[
+controller-actor-system	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+]
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: 	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)	at akka.dispatch.Mailbox.run(Mailbox.scala:228)	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)	at scala.Option.map(Option.scala:230)	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)	at scala.Option.map(Option.scala:230)
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at scala.Option.map(Option.scala:230)	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at scala.collection.immutable.List.foreach(List.scala:392)	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)	at scala.collection.immutable.List.foreach(List.scala:392)
+
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)	at akka.actor.FSM.initialize(FSM.scala:565)
+
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)	at akka.actor.FSM.initialize$(FSM.scala:564)	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+
+
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+
+
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)	at scala.collection.immutable.List.foreach(List.scala:392)	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+
+
+	at akka.actor.FSM.handleTransition(FSM.scala:650)	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+
+	at akka.actor.FSM.makeTransition(FSM.scala:736)	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+
+	at akka.actor.FSM.initialize(FSM.scala:565)	at akka.actor.ActorCell.create(ActorCell.scala:674)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+
+
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)	at akka.actor.Props.newActor(Props.scala:212)
+
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)	at akka.actor.ActorCell.newActor(ActorCell.scala:648)	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)	at akka.actor.Props.newActor(Props.scala:212)
+
+
+
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)	at akka.actor.ActorCell.create(ActorCell.scala:674)	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+
+
+	at akka.actor.ActorCell.create(ActorCell.scala:674)	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+
+
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)	... 8 more
+
+
+	at scala.Option.map(Option.scala:230)	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)Caused by: 
+java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)	at scala.sys.package$.error(package.scala:30)
+
+
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+
+	... 42 more
+
+
+Caused by: 	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+
+	at scala.Option.map(Option.scala:230)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)	at akka.actor.FSM.initialize(FSM.scala:565)
+
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)	at akka.actor.FSM.initialize$(FSM.scala:564)
+
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more
+Uncaught error from thread [controller-actor-system-akka.actor.default-dispatcher-29]: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure), shutting down JVM since 'akka.jvm-exit-on-fatal-error' is enabled for ActorSystem[controller-actor-system]
+java.lang.NoClassDefFoundError: org.apache.openwhisk.core.connector.ActivationMessage$ (initialization failure)
+	at java.base/java.lang.J9VMInternals.initializationAlreadyFailed(J9VMInternals.java:136)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.dungeon.FaultHandling.finishCreate(FaultHandling.scala:137)
+	at akka.actor.dungeon.FaultHandling.faultCreate(FaultHandling.scala:131)
+	at akka.actor.dungeon.FaultHandling.faultCreate$(FaultHandling.scala:121)
+	at akka.actor.ActorCell.faultCreate(ActorCell.scala:447)
+	at akka.actor.dungeon.FaultHandling.faultRecreate(FaultHandling.scala:60)
+	at akka.actor.dungeon.FaultHandling.faultRecreate$(FaultHandling.scala:56)
+	at akka.actor.ActorCell.faultRecreate(ActorCell.scala:447)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:550)
+	at akka.actor.ActorCell.systemInvoke(ActorCell.scala:569)
+	at akka.dispatch.Mailbox.processAllSystemMessages(Mailbox.scala:293)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:228)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:241)
+	at akka.dispatch.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at akka.dispatch.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at akka.dispatch.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at akka.dispatch.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: Cannot automatically determine case class field names and order for 'org.apache.openwhisk.core.connector.ActivationMessage', please use the 'jsonFormat' overload with explicit field name specification
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:86)
+	at spray.json.ProductFormats.extractFieldNames$(ProductFormats.scala:68)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.extractFieldNames(Message.scala:172)
+	at spray.json.ProductFormatsInstances.jsonFormat12(ProductFormatsInstances.scala:356)
+	at spray.json.ProductFormatsInstances.jsonFormat12$(ProductFormatsInstances.scala:355)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.jsonFormat12(Message.scala:172)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<init>(Message.scala:176)
+	at org.apache.openwhisk.core.connector.ActivationMessage$.<clinit>(Message.scala)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1(InvokerSupervision.scala:407)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.$anonfun$invokeTestAction$1$adapted(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$Lambda$1800/00000000B801ED30.apply(Unknown Source)
+	at scala.Option.map(Option.scala:230)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.org$apache$openwhisk$core$loadBalancer$InvokerActor$$invokeTestAction(InvokerSupervision.scala:406)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:354)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$anonfun$healthPingingTransitionHandler$1.applyOrElse(InvokerSupervision.scala:352)
+	at scala.runtime.AbstractPartialFunction.apply(AbstractPartialFunction.scala:38)
+	at akka.actor.FSM.$anonfun$handleTransition$1(FSM.scala:650)
+	at akka.actor.FSM.$anonfun$handleTransition$1$adapted(FSM.scala:650)
+	at akka.actor.FSM$$Lambda$1241/00000000D44279B0.apply(Unknown Source)
+	at scala.collection.immutable.List.foreach(List.scala:392)
+	at akka.actor.FSM.handleTransition(FSM.scala:650)
+	at akka.actor.FSM.makeTransition(FSM.scala:736)
+	at akka.actor.FSM.makeTransition$(FSM.scala:727)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.makeTransition(InvokerSupervision.scala:285)
+	at akka.actor.FSM.initialize(FSM.scala:565)
+	at akka.actor.FSM.initialize$(FSM.scala:564)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.initialize(InvokerSupervision.scala:285)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor.<init>(InvokerSupervision.scala:362)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$.$anonfun$props$2(InvokerSupervision.scala:438)
+	at org.apache.openwhisk.core.loadBalancer.InvokerActor$$$Lambda$1798/00000000C4074170.apply(Unknown Source)
+	at akka.actor.TypedCreatorFunctionConsumer.produce(IndirectActorProducer.scala:91)
+	at akka.actor.Props.newActor(Props.scala:212)
+	at akka.actor.ActorCell.newActor(ActorCell.scala:648)
+	at akka.actor.ActorCell.create(ActorCell.scala:674)
+	at akka.actor.ActorCell.invokeAll$1(ActorCell.scala:547)
+	... 8 more
+Caused by: java.lang.RuntimeException: Case class org.apache.openwhisk.core.connector.ActivationMessage declares additional fields
+	at scala.sys.package$.error(package.scala:30)
+	at spray.json.ProductFormats.extractFieldNames(ProductFormats.scala:80)
+	... 42 more

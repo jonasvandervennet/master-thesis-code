@@ -1,0 +1,1159 @@
+[2021-02-21T16:40:50.760Z] [INFO] Slf4jLogger started
+[2021-02-21T16:40:51.080Z] [WARN] Failed to attach the instrumentation because the Kamon Bundle is not present on the classpath
+[2021-02-21T16:40:51.203Z] [INFO] Started the Kamon StatsD reporter
+[2021-02-21T16:40:51.385Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.triggers.fires.perMinute
+[2021-02-21T16:40:51.386Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.sequence.maxLength
+[2021-02-21T16:40:51.386Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.concurrent
+[2021-02-21T16:40:51.386Z] [INFO] [#tid_sid_unknown] [Config] environment set value for limits.actions.invokes.perMinute
+[2021-02-21T16:40:51.386Z] [INFO] [#tid_sid_unknown] [Config] environment set value for runtimes.manifest
+[2021-02-21T16:40:51.386Z] [INFO] [#tid_sid_unknown] [Config] environment set value for kafka.hosts
+[2021-02-21T16:40:51.386Z] [INFO] [#tid_sid_unknown] [Config] environment set value for port
+[2021-02-21T16:40:51.781Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] created topic completed0
+[2021-02-21T16:40:51.898Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] created topic health
+[2021-02-21T16:40:52.006Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] created topic cacheInvalidation
+[2021-02-21T16:40:52.093Z] [INFO] [#tid_sid_unknown] [KafkaMessagingProvider] events already exists and the user can see it, skipping creation.
+[2021-02-21T16:40:52.222Z] [INFO] [#tid_sid_controller] [Controller] starting controller instance 0 [marker:controller_startup_counter:845]
+[2021-02-21T16:40:52.775Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-21T16:40:52.940Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-21T16:40:53.183Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/invokerHealthTestAction0) [marker:database_cacheMiss_counter:1807]
+[2021-02-21T16:40:53.211Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/invokerHealthTestAction0' [marker:database_getDocument_start:1835]
+[2021-02-21T16:40:53.416Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore]  [marker:database_getDocument_finish:2039:204]
+[2021-02-21T16:40:53.416Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] invalidating CacheKey(whisk.system/invokerHealthTestAction0)
+[2021-02-21T16:40:53.446Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:40:53.448Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/invokerHealthTestAction0, rev: null' [marker:database_saveDocument_start:2072]
+[2021-02-21T16:40:53.462Z] [INFO] [#tid_sid_loadbalancer] [InvokerPool] test action for invoker health now exists
+[2021-02-21T16:40:53.484Z] [INFO] [#tid_sid_loadbalancer] [CouchDbRestStore]  [marker:database_saveDocument_finish:2107:35]
+[2021-02-21T16:40:53.487Z] [INFO] [#tid_sid_loadbalancer] [WhiskAction] write all done, caching CacheKey(whisk.system/invokerHealthTestAction0) Cached
+[2021-02-21T16:40:53.568Z] [INFO] [#tid_sid_controller] [Controller] loadbalancer initialized: ThesisNetworkBalancer
+[2021-02-21T16:40:53.569Z] [INFO] [#tid_sid_dispatcher] [MessageFeed] handler capacity = 128, pipeline fill at = 128, pipeline depth = 256
+[2021-02-21T16:40:53.640Z] [INFO] [#tid_sid_controller] [KindRestrictor] all kinds are allowed, the white-list is not specified
+[2021-02-21T16:40:53.965Z] [INFO] [#tid_sid_controller] [ActionsApi] actionSequenceLimit '50'
+[2021-02-21T16:41:01.070Z] [INFO] [#tid_RinChhpgpqqsBlyt7YLZ6IRLRSKXxGn2] GET /invokers/healthy/count 
+[2021-02-21T16:41:01.081Z] [INFO] [#tid_RinChhpgpqqsBlyt7YLZ6IRLRSKXxGn2] [BasicHttpService] [marker:http_get.200_counter:11:11]
+[2021-02-21T16:41:04.087Z] [INFO] [#tid_6mQ0jHclTTm42VIQq7x25s5s9UpeuE40] GET /invokers/healthy/count 
+[2021-02-21T16:41:04.088Z] [INFO] [#tid_6mQ0jHclTTm42VIQq7x25s5s9UpeuE40] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:07.095Z] [INFO] [#tid_J6JQxfYH06gxtZjKvpDENqtAlA4Q36Hg] GET /invokers/healthy/count 
+[2021-02-21T16:41:07.098Z] [INFO] [#tid_J6JQxfYH06gxtZjKvpDENqtAlA4Q36Hg] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:10.104Z] [INFO] [#tid_V2IlPaTqkpfwIuZ3P02F3ntipzJ2yzqy] GET /invokers/healthy/count 
+[2021-02-21T16:41:10.105Z] [INFO] [#tid_V2IlPaTqkpfwIuZ3P02F3ntipzJ2yzqy] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:41:13.111Z] [INFO] [#tid_BeBC9hclfgUXRmm6LJTUCtpOM7yOIQQ6] GET /invokers/healthy/count 
+[2021-02-21T16:41:13.113Z] [INFO] [#tid_BeBC9hclfgUXRmm6LJTUCtpOM7yOIQQ6] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:16.128Z] [INFO] [#tid_pyRn84hA2nyarXSMmcZ3xmlaNugZwj2C] GET /invokers/healthy/count 
+[2021-02-21T16:41:16.130Z] [INFO] [#tid_pyRn84hA2nyarXSMmcZ3xmlaNugZwj2C] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:19.147Z] [INFO] [#tid_Y0AgrdUkgSdP7cjmrldtwGTk3XSK6630] GET /invokers/healthy/count 
+[2021-02-21T16:41:19.153Z] [INFO] [#tid_Y0AgrdUkgSdP7cjmrldtwGTk3XSK6630] [BasicHttpService] [marker:http_get.200_counter:5:5]
+[2021-02-21T16:41:19.678Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] registered a new invoker: invoker0
+[2021-02-21T16:41:19.689Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker0 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:28313]
+[2021-02-21T16:41:19.700Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id '29caab44a99943588aab44a999c35892' [marker:controller_kafka_start:28324]
+[2021-02-21T16:41:19.713Z] [INFO] [#tid_sid_loadbalancer] [ThesisNetworkBalancerState] loadbalancer invoker status updated. number of known invokers increased: new = 1, old = 0. details: invoker0/owdev-invoker-0: Unhealthy / 2048 MB of 2048 MB.
+[2021-02-21T16:41:19.714Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] invoker status changed to 0 -> Unhealthy
+[2021-02-21T16:41:19.715Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posted to invoker0[0][0] [marker:controller_kafka_finish:28339:15]
+[2021-02-21T16:41:22.165Z] [INFO] [#tid_6s2xvgjCbcJyiECmrPhQGb9nNlGVjCyB] GET /invokers/healthy/count 
+[2021-02-21T16:41:22.167Z] [INFO] [#tid_6s2xvgjCbcJyiECmrPhQGb9nNlGVjCyB] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:25.177Z] [INFO] [#tid_9NtLbujmxENLiLnBACQQDIlwUpWzqdp7] GET /invokers/healthy/count 
+[2021-02-21T16:41:25.178Z] [INFO] [#tid_9NtLbujmxENLiLnBACQQDIlwUpWzqdp7] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:27.411Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] registered a new invoker: invoker2
+[2021-02-21T16:41:27.412Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker2 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:36036]
+[2021-02-21T16:41:27.412Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posting topic 'invoker2' with activation id 'cce4c0b842d548a3a4c0b842d528a352' [marker:controller_kafka_start:36036]
+[2021-02-21T16:41:27.413Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] invoker status changed to 0 -> Unhealthy, 1 -> Offline, 2 -> Unhealthy
+[2021-02-21T16:41:27.413Z] [INFO] [#tid_sid_loadbalancer] [ThesisNetworkBalancerState] loadbalancer invoker status updated. number of known invokers increased: new = 3, old = 1. details: invoker1: Offline / 2048 MB of 2048 MB, invoker2/owdev-invoker-2: Unhealthy / 2048 MB of 2048 MB.
+[2021-02-21T16:41:27.417Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posted to invoker2[0][0] [marker:controller_kafka_finish:36041:5]
+[2021-02-21T16:41:27.431Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] registered a new invoker: invoker1
+[2021-02-21T16:41:27.432Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is unhealthy [marker:loadbalancer_invokerState.unhealthy_counter:36056]
+[2021-02-21T16:41:27.433Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posting topic 'invoker1' with activation id '8984586c0f7c425c84586c0f7cd25cb6' [marker:controller_kafka_start:36057]
+[2021-02-21T16:41:27.434Z] [INFO] [#tid_sid_loadbalancer] [ThesisNetworkBalancerState] loadbalancer invoker status updated. no update required - number of known invokers unchanged: 3.
+[2021-02-21T16:41:27.435Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] invoker status changed to 0 -> Unhealthy, 1 -> Unhealthy, 2 -> Unhealthy
+[2021-02-21T16:41:27.444Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posted to invoker1[0][0] [marker:controller_kafka_finish:36068:11]
+[2021-02-21T16:41:28.187Z] [INFO] [#tid_tDEM9cuRQacUyciVW9Wdggs3w81JQtet] GET /invokers/healthy/count 
+[2021-02-21T16:41:28.189Z] [INFO] [#tid_tDEM9cuRQacUyciVW9Wdggs3w81JQtet] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:31.198Z] [INFO] [#tid_CQz0YLFchK0qtW8zNZMSd3x7zM9NU1WQ] GET /invokers/healthy/count 
+[2021-02-21T16:41:31.200Z] [INFO] [#tid_CQz0YLFchK0qtW8zNZMSd3x7zM9NU1WQ] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:34.205Z] [INFO] [#tid_ms7tZJ8lS0u0JNbmOpQ8BY3E2sFiIoJt] GET /invokers/healthy/count 
+[2021-02-21T16:41:34.207Z] [INFO] [#tid_ms7tZJ8lS0u0JNbmOpQ8BY3E2sFiIoJt] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:41:37.212Z] [INFO] [#tid_XRlMjDKrUmgbmTyn7exu83UMf2sEFMD0] GET /invokers/healthy/count 
+[2021-02-21T16:41:37.214Z] [INFO] [#tid_XRlMjDKrUmgbmTyn7exu83UMf2sEFMD0] [BasicHttpService] [marker:http_get.200_counter:2:2]
+[2021-02-21T16:41:40.220Z] [INFO] [#tid_ayiJJWYbzSpd8Qp0gAPmf53RhOXxYJwS] GET /invokers/healthy/count 
+[2021-02-21T16:41:40.221Z] [INFO] [#tid_ayiJJWYbzSpd8Qp0gAPmf53RhOXxYJwS] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:41:43.226Z] [INFO] [#tid_WBBR0rZpvxnXYM3lUwUOoUCL8RdT8gVg] GET /invokers/healthy/count 
+[2021-02-21T16:41:43.228Z] [INFO] [#tid_WBBR0rZpvxnXYM3lUwUOoUCL8RdT8gVg] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:41:46.323Z] [INFO] [#tid_jI3C8cubD1YcV9IVlKB4fBM4qpYYPxbM] GET /invokers/healthy/count 
+[2021-02-21T16:41:46.324Z] [INFO] [#tid_jI3C8cubD1YcV9IVlKB4fBM4qpYYPxbM] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:41:49.330Z] [INFO] [#tid_6PoN0plZcyxbqwiI2r1AC0jfIUEdOXxc] GET /invokers/healthy/count 
+[2021-02-21T16:41:49.334Z] [INFO] [#tid_6PoN0plZcyxbqwiI2r1AC0jfIUEdOXxc] [BasicHttpService] [marker:http_get.200_counter:4:4]
+[2021-02-21T16:41:52.341Z] [INFO] [#tid_6j7aXZgIcFQBKPUgkVEe15jFV8YkP4Tc] GET /invokers/healthy/count 
+[2021-02-21T16:41:52.342Z] [INFO] [#tid_6j7aXZgIcFQBKPUgkVEe15jFV8YkP4Tc] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:41:55.370Z] [INFO] [#tid_C2hRgdu4WTWlNULlvIhPJa8LWdm1BOax] GET /invokers/healthy/count 
+[2021-02-21T16:41:55.374Z] [INFO] [#tid_C2hRgdu4WTWlNULlvIhPJa8LWdm1BOax] [BasicHttpService] [marker:http_get.200_counter:3:3]
+[2021-02-21T16:41:58.382Z] [INFO] [#tid_wZIQgfEnqbStNw5nRFHmU7KIbwwQoLYv] GET /invokers/healthy/count 
+[2021-02-21T16:41:58.386Z] [INFO] [#tid_wZIQgfEnqbStNw5nRFHmU7KIbwwQoLYv] [BasicHttpService] [marker:http_get.200_counter:4:4]
+[2021-02-21T16:42:00.153Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received completion ack for health action on invoker0/owdev-invoker-0
+[2021-02-21T16:42:00.155Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id '39c52caa6f334a0b852caa6f33da0b5e' [marker:controller_kafka_start:68778]
+[2021-02-21T16:42:00.159Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker0 is up
+[2021-02-21T16:42:00.159Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posted to invoker0[0][1] [marker:controller_kafka_finish:68783:5]
+[2021-02-21T16:42:00.159Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] invoker status changed to 0 -> Healthy, 1 -> Unhealthy, 2 -> Unhealthy
+[2021-02-21T16:42:00.159Z] [INFO] [#tid_sid_loadbalancer] [ThesisNetworkBalancerState] loadbalancer invoker status updated. no update required - number of known invokers unchanged: 3.
+[2021-02-21T16:42:00.304Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received completion ack for health action on invoker0/owdev-invoker-0
+[2021-02-21T16:42:00.887Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received completion ack for health action on invoker2/owdev-invoker-2
+[2021-02-21T16:42:00.887Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker2 is up
+[2021-02-21T16:42:00.887Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posting topic 'invoker2' with activation id '385c3a9c63d34b2b9c3a9c63d35b2b3e' [marker:controller_kafka_start:69511]
+[2021-02-21T16:42:00.887Z] [INFO] [#tid_sid_loadbalancer] [ThesisNetworkBalancerState] loadbalancer invoker status updated. no update required - number of known invokers unchanged: 3.
+[2021-02-21T16:42:00.887Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] invoker status changed to 0 -> Healthy, 1 -> Unhealthy, 2 -> Healthy
+[2021-02-21T16:42:00.889Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posted to invoker2[0][1] [marker:controller_kafka_finish:69513:2]
+[2021-02-21T16:42:01.280Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received completion ack for health action on invoker2/owdev-invoker-2
+[2021-02-21T16:42:01.402Z] [INFO] [#tid_tEP3NaD5yXglM162Grn2A0XAxPKSMgfE] GET /invokers/healthy/count 
+[2021-02-21T16:42:01.403Z] [INFO] [#tid_tEP3NaD5yXglM162Grn2A0XAxPKSMgfE] [BasicHttpService] [marker:http_get.200_counter:1:1]
+[2021-02-21T16:42:27.450Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posting topic 'invoker1' with activation id '396cf278837548b6acf278837598b68d' [marker:controller_kafka_start:96074]
+[2021-02-21T16:42:27.453Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] posted to invoker1[0][1] [marker:controller_kafka_finish:96077:3]
+[2021-02-21T16:42:29.298Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received completion ack for health action on invoker1/owdev-invoker-1
+[2021-02-21T16:42:29.299Z] [INFO] [#tid_sid_invokerHealth] [InvokerActor] invoker1 is up
+[2021-02-21T16:42:29.299Z] [INFO] [#tid_sid_invokerHealth] [InvokerPool] invoker status changed to 0 -> Healthy, 1 -> Healthy, 2 -> Healthy
+[2021-02-21T16:42:29.300Z] [INFO] [#tid_sid_loadbalancer] [ThesisNetworkBalancerState] loadbalancer invoker status updated. no update required - number of known invokers unchanged: 3.
+[2021-02-21T16:42:29.300Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received result ack for '8984586c0f7c425c84586c0f7cd25cb6'
+[2021-02-21T16:42:40.062Z] [INFO] [#tid_sid_invokerHealth] [ThesisNetworkBalancer] received completion ack for health action on invoker1/owdev-invoker-1
+[2021-02-21T16:42:45.352Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] PUT /api/v1/namespaces/whisk.system/packages/apimgmt overwrite=true
+[2021-02-21T16:42:45.362Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:42:45.364Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [Identity] [GET] serving from datastore: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheMiss_counter:13]
+[2021-02-21T16:42:45.365Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [CouchDbRestStore] [QUERY] 'test_subjects' searching 'subjects.v2.0.0/identities [marker:database_queryView_start:14]
+[2021-02-21T16:42:45.490Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [CouchDbRestStore]  [marker:database_queryView_finish:138:124]
+[2021-02-21T16:42:45.527Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/apimgmt) [marker:database_cacheMiss_counter:176]
+[2021-02-21T16:42:45.527Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt' [marker:database_getDocument_start:176]
+[2021-02-21T16:42:45.532Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [CouchDbRestStore]  [marker:database_getDocument_finish:181:5]
+[2021-02-21T16:42:45.532Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [WhiskPackage] invalidating CacheKey(whisk.system/apimgmt)
+[2021-02-21T16:42:45.536Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:42:45.538Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/apimgmt, rev: null' [marker:database_saveDocument_start:186]
+[2021-02-21T16:42:45.551Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [CouchDbRestStore]  [marker:database_saveDocument_finish:200:14]
+[2021-02-21T16:42:45.551Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [WhiskPackage] write all done, caching CacheKey(whisk.system/apimgmt) Cached
+[2021-02-21T16:42:45.600Z] [INFO] [#tid_coeTCFvoiXwvqYnvuNv3pAm1ppjRYtsi] [BasicHttpService] [marker:http_put.200_counter:247:247]
+[2021-02-21T16:42:59.592Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] GET /api/v1/namespaces/whisk.system/actions/apimgmt/getApi code=false
+[2021-02-21T16:42:59.593Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:42:59.596Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:42:59.600Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:8]
+[2021-02-21T16:42:59.602Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:10]
+[2021-02-21T16:42:59.623Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:31]
+[2021-02-21T16:42:59.647Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:54]
+[2021-02-21T16:42:59.651Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/apimgmt/getApi) [marker:database_cacheMiss_counter:59]
+[2021-02-21T16:42:59.652Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt/getApi' [marker:database_getDocument_start:59]
+[2021-02-21T16:42:59.660Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [CouchDbRestStore]  [marker:database_getDocument_finish:67:8]
+[2021-02-21T16:42:59.660Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [WhiskActionMetaData] invalidating CacheKey(whisk.system/apimgmt/getApi)
+[2021-02-21T16:42:59.667Z] [INFO] [#tid_j2MdgHwo0Gsc3Z0XAbM4qSY29JszkGaI] [BasicHttpService] [marker:http_get.404_counter:75:75]
+[2021-02-21T16:42:59.696Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] PUT /api/v1/namespaces/whisk.system/actions/apimgmt/getApi overwrite=true
+[2021-02-21T16:42:59.707Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:42:59.707Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:11]
+[2021-02-21T16:42:59.709Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:13]
+[2021-02-21T16:43:00.112Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/apimgmt/getApi) [marker:database_cacheMiss_counter:415]
+[2021-02-21T16:43:00.112Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt/getApi' [marker:database_getDocument_start:415]
+[2021-02-21T16:43:00.115Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [CouchDbRestStore]  [marker:database_getDocument_finish:419:3]
+[2021-02-21T16:43:00.115Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [WhiskAction] invalidating CacheKey(whisk.system/apimgmt/getApi)
+[2021-02-21T16:43:00.218Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:00.262Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/apimgmt/getApi, rev: null' [marker:database_saveDocument_start:566]
+[2021-02-21T16:43:00.273Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [CouchDbRestStore]  [marker:database_saveDocument_finish:577:11]
+[2021-02-21T16:43:00.274Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment 'f8839ece-f118-427b-839e-cef118e27bbc' of document 'id: whisk.system/apimgmt/getApi, rev: 1-0d8b488b39b06c8ebd04b6b37796dd43' [marker:database_saveDocumentAttachment_start:578]
+[2021-02-21T16:43:00.380Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:684:106]
+[2021-02-21T16:43:00.394Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [WhiskAction] write all done, caching CacheKey(whisk.system/apimgmt/getApi) Cached
+[2021-02-21T16:43:00.597Z] [INFO] [#tid_UDZ0PMRxc71abQ5QOxv1sqIaETMgPCt3] [BasicHttpService] [marker:http_put.200_counter:901:901]
+[2021-02-21T16:43:00.679Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] GET /api/v1/namespaces/whisk.system/actions/apimgmt/createApi code=false
+[2021-02-21T16:43:00.680Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:00.681Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:00.681Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:00.682Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:00.700Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:21]
+[2021-02-21T16:43:00.718Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:38]
+[2021-02-21T16:43:00.718Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/apimgmt/createApi) [marker:database_cacheMiss_counter:39]
+[2021-02-21T16:43:00.718Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt/createApi' [marker:database_getDocument_start:39]
+[2021-02-21T16:43:00.721Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [CouchDbRestStore]  [marker:database_getDocument_finish:42:3]
+[2021-02-21T16:43:00.721Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [WhiskActionMetaData] invalidating CacheKey(whisk.system/apimgmt/createApi)
+[2021-02-21T16:43:00.722Z] [INFO] [#tid_ea8zHlcOiChgdJjMnlBnpkc4PorScvVV] [BasicHttpService] [marker:http_get.404_counter:43:43]
+[2021-02-21T16:43:00.745Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] PUT /api/v1/namespaces/whisk.system/actions/apimgmt/createApi overwrite=true
+[2021-02-21T16:43:00.748Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:00.749Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:00.749Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:01.018Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/apimgmt/createApi) [marker:database_cacheMiss_counter:273]
+[2021-02-21T16:43:01.018Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt/createApi' [marker:database_getDocument_start:273]
+[2021-02-21T16:43:01.021Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [CouchDbRestStore]  [marker:database_getDocument_finish:276:3]
+[2021-02-21T16:43:01.021Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [WhiskAction] invalidating CacheKey(whisk.system/apimgmt/createApi)
+[2021-02-21T16:43:01.027Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:01.030Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/apimgmt/createApi, rev: null' [marker:database_saveDocument_start:284]
+[2021-02-21T16:43:01.037Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [CouchDbRestStore]  [marker:database_saveDocument_finish:292:7]
+[2021-02-21T16:43:01.037Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '5bb8115a-d70b-43dd-b811-5ad70be3ddfd' of document 'id: whisk.system/apimgmt/createApi, rev: 1-2d5b84b758c7a6f0c2d3cb0c06998ac2' [marker:database_saveDocumentAttachment_start:292]
+[2021-02-21T16:43:01.103Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:358:66]
+[2021-02-21T16:43:01.115Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [WhiskAction] write all done, caching CacheKey(whisk.system/apimgmt/createApi) Cached
+[2021-02-21T16:43:01.137Z] [INFO] [#tid_ySlxVw35cKhML4tZFrUByqS7KSmKtSkl] [BasicHttpService] [marker:http_put.200_counter:391:391]
+[2021-02-21T16:43:01.230Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] GET /api/v1/namespaces/whisk.system/actions/apimgmt/deleteApi code=false
+[2021-02-21T16:43:01.231Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:01.231Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:01.232Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:01.232Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:01.251Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:21]
+[2021-02-21T16:43:01.266Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:36]
+[2021-02-21T16:43:01.266Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/apimgmt/deleteApi) [marker:database_cacheMiss_counter:36]
+[2021-02-21T16:43:01.267Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt/deleteApi' [marker:database_getDocument_start:36]
+[2021-02-21T16:43:01.269Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [CouchDbRestStore]  [marker:database_getDocument_finish:39:3]
+[2021-02-21T16:43:01.269Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [WhiskActionMetaData] invalidating CacheKey(whisk.system/apimgmt/deleteApi)
+[2021-02-21T16:43:01.270Z] [INFO] [#tid_OIXFL5VKlcySX2NEI5D1bhOo7b1yRpLm] [BasicHttpService] [marker:http_get.404_counter:40:40]
+[2021-02-21T16:43:01.292Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] PUT /api/v1/namespaces/whisk.system/actions/apimgmt/deleteApi overwrite=true
+[2021-02-21T16:43:01.296Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:01.297Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:01.297Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/apimgmt) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:01.537Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/apimgmt/deleteApi) [marker:database_cacheMiss_counter:245]
+[2021-02-21T16:43:01.537Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/apimgmt/deleteApi' [marker:database_getDocument_start:245]
+[2021-02-21T16:43:01.540Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [CouchDbRestStore]  [marker:database_getDocument_finish:248:3]
+[2021-02-21T16:43:01.540Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [WhiskAction] invalidating CacheKey(whisk.system/apimgmt/deleteApi)
+[2021-02-21T16:43:01.546Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:01.551Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/apimgmt/deleteApi, rev: null' [marker:database_saveDocument_start:259]
+[2021-02-21T16:43:01.559Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [CouchDbRestStore]  [marker:database_saveDocument_finish:267:8]
+[2021-02-21T16:43:01.559Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '3c31ff17-0023-4e80-b1ff-1700239e801e' of document 'id: whisk.system/apimgmt/deleteApi, rev: 1-040c0904e93c8db58c6f6db1d5c8eae2' [marker:database_saveDocumentAttachment_start:267]
+[2021-02-21T16:43:01.623Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:331:64]
+[2021-02-21T16:43:01.631Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [WhiskAction] write all done, caching CacheKey(whisk.system/apimgmt/deleteApi) Cached
+[2021-02-21T16:43:01.647Z] [INFO] [#tid_iDnWHGFQwPli1KCVlUpkm2q5ZmvjzRAX] [BasicHttpService] [marker:http_put.200_counter:354:354]
+[2021-02-21T16:43:04.731Z] [INFO] [#tid_KVtUbN8RQI4zjOI1j4VLbqv0izSXOhuQ] GET / 
+[2021-02-21T16:43:04.734Z] [INFO] [#tid_KVtUbN8RQI4zjOI1j4VLbqv0izSXOhuQ] [BasicHttpService] [marker:http_get.200_counter:3:3]
+[2021-02-21T16:43:04.736Z] [INFO] [#tid_y5jLgG9jTyBJXKyWT1dA7wK2eOdQVqyo] GET / 
+[2021-02-21T16:43:04.736Z] [INFO] [#tid_1U4h8NtkGLFlWnNdaxkW76ISayXsoYRB] GET / 
+[2021-02-21T16:43:04.738Z] [INFO] [#tid_1U4h8NtkGLFlWnNdaxkW76ISayXsoYRB] [BasicHttpService] [marker:http_get.200_counter:3:3]
+[2021-02-21T16:43:04.739Z] [INFO] [#tid_y5jLgG9jTyBJXKyWT1dA7wK2eOdQVqyo] [BasicHttpService] [marker:http_get.200_counter:3:3]
+[2021-02-21T16:43:04.749Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] PUT /api/v1/namespaces/_/packages/github overwrite=true
+[2021-02-21T16:43:04.750Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.753Z] [INFO] [#tid_Q2JEXaZRxQUanjg13aRzRiiKo7B5yPnt] GET / 
+[2021-02-21T16:43:04.755Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.756Z] [INFO] [#tid_Q2JEXaZRxQUanjg13aRzRiiKo7B5yPnt] [BasicHttpService] [marker:http_get.200_counter:3:3]
+[2021-02-21T16:43:04.759Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] PUT /api/v1/namespaces/_/packages/slack overwrite=true
+[2021-02-21T16:43:04.762Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.763Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/github) [marker:database_cacheMiss_counter:13]
+[2021-02-21T16:43:04.763Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/github' [marker:database_getDocument_start:13]
+[2021-02-21T16:43:04.763Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] PUT /api/v1/namespaces/_/packages/utils overwrite=true
+[2021-02-21T16:43:04.764Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.766Z] [INFO] [#tid_3iBiSCfhhdtbTwrCWjxBjGtBsM8kDuD0] GET / 
+[2021-02-21T16:43:04.769Z] [INFO] [#tid_3iBiSCfhhdtbTwrCWjxBjGtBsM8kDuD0] [BasicHttpService] [marker:http_get.200_counter:4:4]
+[2021-02-21T16:43:04.770Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [CouchDbRestStore]  [marker:database_getDocument_finish:21:7]
+[2021-02-21T16:43:04.770Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [WhiskPackage] invalidating CacheKey(whisk.system/github)
+[2021-02-21T16:43:04.771Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] PUT /api/v1/namespaces/_/packages/weather overwrite=true
+[2021-02-21T16:43:04.774Z] [INFO] [#tid_OkmLcSSKgUat0aprxSer2quNhfIrQm2X] GET / 
+[2021-02-21T16:43:04.774Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.775Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/slack) [marker:database_cacheMiss_counter:14]
+[2021-02-21T16:43:04.775Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/slack' [marker:database_getDocument_start:14]
+[2021-02-21T16:43:04.776Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.779Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:04.780Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/weather) [marker:database_cacheMiss_counter:8]
+[2021-02-21T16:43:04.780Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] PUT /api/v1/namespaces/_/packages/samples overwrite=true
+[2021-02-21T16:43:04.780Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/weather' [marker:database_getDocument_start:8]
+[2021-02-21T16:43:04.780Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.780Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [CouchDbRestStore]  [marker:database_getDocument_finish:21:7]
+[2021-02-21T16:43:04.785Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [WhiskPackage] invalidating CacheKey(whisk.system/slack)
+[2021-02-21T16:43:04.786Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:04.787Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/slack, rev: null' [marker:database_saveDocument_start:22]
+[2021-02-21T16:43:04.788Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.788Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:04.788Z] [INFO] [#tid_OkmLcSSKgUat0aprxSer2quNhfIrQm2X] [BasicHttpService] [marker:http_get.200_counter:11:11]
+[2021-02-21T16:43:04.788Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/samples) [marker:database_cacheMiss_counter:7]
+[2021-02-21T16:43:04.788Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples' [marker:database_getDocument_start:7]
+[2021-02-21T16:43:04.789Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [CouchDbRestStore]  [marker:database_getDocument_finish:18:10]
+[2021-02-21T16:43:04.789Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [WhiskPackage] invalidating CacheKey(whisk.system/weather)
+[2021-02-21T16:43:04.790Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:04.790Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/github, rev: null' [marker:database_saveDocument_start:41]
+[2021-02-21T16:43:04.790Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:27]
+[2021-02-21T16:43:04.790Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/weather, rev: null' [marker:database_saveDocument_start:19]
+[2021-02-21T16:43:04.793Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/utils) [marker:database_cacheMiss_counter:30]
+[2021-02-21T16:43:04.793Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils' [marker:database_getDocument_start:30]
+[2021-02-21T16:43:04.794Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] PUT /api/v1/namespaces/_/packages/websocket overwrite=true
+[2021-02-21T16:43:04.803Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [CouchDbRestStore]  [marker:database_getDocument_finish:24:17]
+[2021-02-21T16:43:04.803Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [WhiskPackage] invalidating CacheKey(whisk.system/samples)
+[2021-02-21T16:43:04.805Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [CouchDbRestStore]  [marker:database_saveDocument_finish:45:23]
+[2021-02-21T16:43:04.807Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [WhiskPackage] write all done, caching CacheKey(whisk.system/slack) Cached
+[2021-02-21T16:43:04.814Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.814Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:04.814Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:12]
+[2021-02-21T16:43:04.814Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples, rev: null' [marker:database_saveDocument_start:26]
+[2021-02-21T16:43:04.814Z] [INFO] [#tid_zmeGxxAANscesufnU4VvtGPd6mFbzcJp] [BasicHttpService] [marker:http_put.200_counter:47:47]
+[2021-02-21T16:43:04.819Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/websocket) [marker:database_cacheMiss_counter:25]
+[2021-02-21T16:43:04.819Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/websocket' [marker:database_getDocument_start:25]
+[2021-02-21T16:43:04.819Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] PUT /api/v1/namespaces/_/actions/slack/post overwrite=true
+[2021-02-21T16:43:04.821Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.821Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:04.821Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [CouchDbRestStore]  [marker:database_getDocument_finish:58:28]
+[2021-02-21T16:43:04.821Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [WhiskPackage] invalidating CacheKey(whisk.system/utils)
+[2021-02-21T16:43:04.821Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:04.822Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils, rev: null' [marker:database_saveDocument_start:59]
+[2021-02-21T16:43:04.833Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/slack) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [CouchDbRestStore]  [marker:database_saveDocument_finish:74:33]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [WhiskPackage] write all done, caching CacheKey(whisk.system/github) Cached
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_tYXH6ApQYfliel9sSlXkIPdkeROOrmEm] [BasicHttpService] [marker:http_put.200_counter:75:75]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/slack/post) [marker:database_cacheMiss_counter:8]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/slack/post' [marker:database_getDocument_start:8]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [CouchDbRestStore]  [marker:database_getDocument_finish:34:9]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [WhiskPackage] invalidating CacheKey(whisk.system/websocket)
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/websocket, rev: null' [marker:database_saveDocument_start:35]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [CouchDbRestStore]  [marker:database_saveDocument_finish:63:44]
+[2021-02-21T16:43:04.834Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [WhiskPackage] write all done, caching CacheKey(whisk.system/weather) Cached
+[2021-02-21T16:43:04.836Z] [INFO] [#tid_R4DCUWxqO0BTey6ASi3lrFCyS8cjKJfX] [BasicHttpService] [marker:http_put.200_counter:64:64]
+[2021-02-21T16:43:04.839Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] PUT /api/v1/namespaces/_/actions/github/webhook overwrite=true
+[2021-02-21T16:43:04.842Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.843Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [CouchDbRestStore]  [marker:database_getDocument_finish:24:16]
+[2021-02-21T16:43:04.843Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [WhiskAction] invalidating CacheKey(whisk.system/slack/post)
+[2021-02-21T16:43:04.843Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:04.844Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.844Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/github) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.847Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/github/webhook) [marker:database_cacheMiss_counter:7]
+[2021-02-21T16:43:04.866Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/github/webhook' [marker:database_getDocument_start:8]
+[2021-02-21T16:43:04.867Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [CouchDbRestStore]  [marker:database_saveDocument_finish:69:43]
+[2021-02-21T16:43:04.867Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] PUT /api/v1/namespaces/_/actions/weather/forecast overwrite=true
+[2021-02-21T16:43:04.867Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [WhiskPackage] write all done, caching CacheKey(whisk.system/samples) Cached
+[2021-02-21T16:43:04.868Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [CouchDbRestStore]  [marker:database_saveDocument_finish:56:21]
+[2021-02-21T16:43:04.868Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [WhiskPackage] write all done, caching CacheKey(whisk.system/websocket) Cached
+[2021-02-21T16:43:04.868Z] [INFO] [#tid_QOnVQ6pMbuqQwHLxqNP5HIFR9LnHSS9C] [BasicHttpService] [marker:http_put.200_counter:70:70]
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_bCZdvcmtMmbgYhFyXhVlf7DLyE433eQo] [BasicHttpService] [marker:http_put.200_counter:57:57]
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/weather) [marker:database_cacheHit_counter:9]
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [CouchDbRestStore]  [marker:database_saveDocument_finish:94:35]
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [WhiskPackage] write all done, caching CacheKey(whisk.system/utils) Cached
+[2021-02-21T16:43:04.869Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [CouchDbRestStore]  [marker:database_getDocument_finish:19:10]
+[2021-02-21T16:43:04.871Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [WhiskAction] invalidating CacheKey(whisk.system/github/webhook)
+[2021-02-21T16:43:04.871Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.871Z] [INFO] [#tid_8idtGlIP9bPiAVqUEhwoC3QtPy7etIBN] [BasicHttpService] [marker:http_put.200_counter:96:96]
+[2021-02-21T16:43:04.871Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/weather/forecast) [marker:database_cacheMiss_counter:18]
+[2021-02-21T16:43:04.871Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/weather/forecast' [marker:database_getDocument_start:18]
+[2021-02-21T16:43:04.872Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] PUT /api/v1/namespaces/_/actions/samples/head overwrite=true
+[2021-02-21T16:43:04.872Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] PUT /api/v1/namespaces/_/actions/websocket/send overwrite=true
+[2021-02-21T16:43:04.872Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.873Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:04.873Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/websocket) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.874Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [CouchDbRestStore]  [marker:database_getDocument_finish:27:9]
+[2021-02-21T16:43:04.874Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [WhiskAction] invalidating CacheKey(whisk.system/weather/forecast)
+[2021-02-21T16:43:04.876Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.876Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] PUT /api/v1/namespaces/_/actions/utils/namespace overwrite=true
+[2021-02-21T16:43:04.878Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.878Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:19]
+[2021-02-21T16:43:04.881Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/websocket/send) [marker:database_cacheMiss_counter:12]
+[2021-02-21T16:43:04.882Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/websocket/send' [marker:database_getDocument_start:12]
+[2021-02-21T16:43:04.882Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.882Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:6]
+[2021-02-21T16:43:04.883Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:23]
+[2021-02-21T16:43:04.884Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:10]
+[2021-02-21T16:43:04.886Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [CouchDbRestStore]  [marker:database_getDocument_finish:18:6]
+[2021-02-21T16:43:04.886Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [WhiskAction] invalidating CacheKey(whisk.system/websocket/send)
+[2021-02-21T16:43:04.888Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/namespace) [marker:database_cacheMiss_counter:13]
+[2021-02-21T16:43:04.889Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/namespace' [marker:database_getDocument_start:14]
+[2021-02-21T16:43:04.889Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.896Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [CouchDbRestStore]  [marker:database_getDocument_finish:22:8]
+[2021-02-21T16:43:04.896Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/github/webhook, rev: null' [marker:database_saveDocument_start:57]
+[2021-02-21T16:43:04.896Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [WhiskAction] invalidating CacheKey(whisk.system/utils/namespace)
+[2021-02-21T16:43:04.896Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/websocket/send, rev: null' [marker:database_saveDocument_start:29]
+[2021-02-21T16:43:04.899Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.900Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/head) [marker:database_cacheMiss_counter:41]
+[2021-02-21T16:43:04.901Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/head' [marker:database_getDocument_start:41]
+[2021-02-21T16:43:04.907Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [CouchDbRestStore]  [marker:database_getDocument_finish:48:7]
+[2021-02-21T16:43:04.908Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [WhiskAction] invalidating CacheKey(whisk.system/samples/head)
+[2021-02-21T16:43:04.909Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [CouchDbRestStore]  [marker:database_saveDocument_finish:41:12]
+[2021-02-21T16:43:04.909Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment 'dc8d7be1-8f51-4305-8d7b-e18f51c30527' of document 'id: whisk.system/websocket/send, rev: 1-1d70e96bb40d59d5db71afed4056e785' [marker:database_saveDocumentAttachment_start:41]
+[2021-02-21T16:43:04.910Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.912Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/weather/forecast, rev: null' [marker:database_saveDocument_start:66]
+[2021-02-21T16:43:04.913Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [CouchDbRestStore]  [marker:database_saveDocument_finish:74:17]
+[2021-02-21T16:43:04.914Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [WhiskAction] write all done, caching CacheKey(whisk.system/github/webhook) Cached
+[2021-02-21T16:43:04.914Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/slack/post, rev: null' [marker:database_saveDocument_start:95]
+[2021-02-21T16:43:04.916Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/namespace, rev: null' [marker:database_saveDocument_start:42]
+[2021-02-21T16:43:04.917Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/head, rev: null' [marker:database_saveDocument_start:57]
+[2021-02-21T16:43:04.923Z] [INFO] [#tid_NThMaWiAyCrQmhIQUjcbV9o3PuwH3hZN] [BasicHttpService] [marker:http_put.200_counter:83:83]
+[2021-02-21T16:43:04.929Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [CouchDbRestStore]  [marker:database_saveDocument_finish:111:14]
+[2021-02-21T16:43:04.929Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [WhiskAction] write all done, caching CacheKey(whisk.system/slack/post) Cached
+[2021-02-21T16:43:04.932Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [CouchDbRestStore]  [marker:database_saveDocument_finish:85:19]
+[2021-02-21T16:43:04.932Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [WhiskAction] write all done, caching CacheKey(whisk.system/weather/forecast) Cached
+[2021-02-21T16:43:04.933Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [CouchDbRestStore]  [marker:database_saveDocument_finish:59:17]
+[2021-02-21T16:43:04.934Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/namespace) Cached
+[2021-02-21T16:43:04.936Z] [INFO] [#tid_ECIiSl8b5Tom0OjZQsazdhIvpyyjHely] [BasicHttpService] [marker:http_put.200_counter:61:61]
+[2021-02-21T16:43:04.941Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:74:33]
+[2021-02-21T16:43:04.956Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [WhiskAction] write all done, caching CacheKey(whisk.system/websocket/send) Cached
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_NPUffM6PMdjstYWogDZcz3CuJAEXut9q] [BasicHttpService] [marker:http_put.200_counter:81:81]
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [CouchDbRestStore]  [marker:database_saveDocument_finish:90:33]
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/head) Cached
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_g3vBojvK0VxFdjCr6quv6HmTJ0tPO1NK] [BasicHttpService] [marker:http_put.200_counter:91:91]
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_6PcMeFnxC9CIFuj4ogvMOrsnrByurkk0] [BasicHttpService] [marker:http_put.200_counter:136:136]
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_6L944iXV9jFXxv9fquaoPgkGzOQycTJl] [BasicHttpService] [marker:http_put.200_counter:108:108]
+[2021-02-21T16:43:04.960Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] PUT /api/v1/namespaces/_/actions/utils/head overwrite=true
+[2021-02-21T16:43:04.962Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.962Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:04.963Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:04.968Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] PUT /api/v1/namespaces/_/actions/samples/helloPromises overwrite=true
+[2021-02-21T16:43:04.970Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/head) [marker:database_cacheMiss_counter:14]
+[2021-02-21T16:43:04.972Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/head' [marker:database_getDocument_start:15]
+[2021-02-21T16:43:04.972Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:04.973Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:04.974Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:04.978Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/helloPromises) [marker:database_cacheMiss_counter:10]
+[2021-02-21T16:43:04.978Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/helloPromises' [marker:database_getDocument_start:10]
+[2021-02-21T16:43:04.984Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [CouchDbRestStore]  [marker:database_getDocument_finish:29:14]
+[2021-02-21T16:43:04.984Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [WhiskAction] invalidating CacheKey(whisk.system/utils/head)
+[2021-02-21T16:43:04.986Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.989Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/head, rev: null' [marker:database_saveDocument_start:34]
+[2021-02-21T16:43:04.993Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [CouchDbRestStore]  [marker:database_getDocument_finish:25:15]
+[2021-02-21T16:43:04.993Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [WhiskAction] invalidating CacheKey(whisk.system/samples/helloPromises)
+[2021-02-21T16:43:04.993Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:04.997Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/helloPromises, rev: null' [marker:database_saveDocument_start:30]
+[2021-02-21T16:43:05.007Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [CouchDbRestStore]  [marker:database_saveDocument_finish:50:16]
+[2021-02-21T16:43:05.007Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/head) Cached
+[2021-02-21T16:43:05.008Z] [INFO] [#tid_FIo1rEpHVzLNkjeZe9SgrgkCM0c3btxr] [BasicHttpService] [marker:http_put.200_counter:53:53]
+[2021-02-21T16:43:05.013Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [CouchDbRestStore]  [marker:database_saveDocument_finish:45:15]
+[2021-02-21T16:43:05.014Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/helloPromises) Cached
+[2021-02-21T16:43:05.015Z] [INFO] [#tid_wURvwGBRPDfDjewoA2BK1amck46IT9Pb] [BasicHttpService] [marker:http_put.200_counter:47:48]
+[2021-02-21T16:43:05.015Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] PUT /api/v1/namespaces/_/actions/utils/cat overwrite=true
+[2021-02-21T16:43:05.022Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.023Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:05.023Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.023Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/cat) [marker:database_cacheMiss_counter:6]
+[2021-02-21T16:43:05.023Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/cat' [marker:database_getDocument_start:6]
+[2021-02-21T16:43:05.024Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] PUT /api/v1/namespaces/_/actions/samples/invoke overwrite=true
+[2021-02-21T16:43:05.028Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [CouchDbRestStore]  [marker:database_getDocument_finish:12:5]
+[2021-02-21T16:43:05.028Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [WhiskAction] invalidating CacheKey(whisk.system/utils/cat)
+[2021-02-21T16:43:05.029Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.032Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.032Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:8]
+[2021-02-21T16:43:05.034Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:9]
+[2021-02-21T16:43:05.034Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/cat, rev: null' [marker:database_saveDocument_start:18]
+[2021-02-21T16:43:05.045Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/invoke) [marker:database_cacheMiss_counter:20]
+[2021-02-21T16:43:05.045Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/invoke' [marker:database_getDocument_start:21]
+[2021-02-21T16:43:05.045Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [CouchDbRestStore]  [marker:database_saveDocument_finish:30:11]
+[2021-02-21T16:43:05.045Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/cat) Cached
+[2021-02-21T16:43:05.051Z] [INFO] [#tid_ezy80B9TtRHUcOwW8ZkWWc6WHQD3E9Is] [BasicHttpService] [marker:http_put.200_counter:35:35]
+[2021-02-21T16:43:05.060Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] PUT /api/v1/namespaces/_/actions/utils/smash overwrite=true
+[2021-02-21T16:43:05.063Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [CouchDbRestStore]  [marker:database_getDocument_finish:39:18]
+[2021-02-21T16:43:05.064Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [WhiskAction] invalidating CacheKey(whisk.system/samples/invoke)
+[2021-02-21T16:43:05.064Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.065Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.065Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:05.065Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:05.068Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/smash) [marker:database_cacheMiss_counter:8]
+[2021-02-21T16:43:05.069Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/smash' [marker:database_getDocument_start:8]
+[2021-02-21T16:43:05.069Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/invoke, rev: null' [marker:database_saveDocument_start:45]
+[2021-02-21T16:43:05.073Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [CouchDbRestStore]  [marker:database_getDocument_finish:13:5]
+[2021-02-21T16:43:05.074Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [WhiskAction] invalidating CacheKey(whisk.system/utils/smash)
+[2021-02-21T16:43:05.074Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.077Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/smash, rev: null' [marker:database_saveDocument_start:17]
+[2021-02-21T16:43:05.092Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [CouchDbRestStore]  [marker:database_saveDocument_finish:68:23]
+[2021-02-21T16:43:05.093Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/invoke) Cached
+[2021-02-21T16:43:05.093Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [CouchDbRestStore]  [marker:database_saveDocument_finish:33:16]
+[2021-02-21T16:43:05.093Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/smash) Cached
+[2021-02-21T16:43:05.094Z] [INFO] [#tid_ApmL9p1kAZWYqqSLvtiyR0VQCg80t6Zh] [BasicHttpService] [marker:http_put.200_counter:70:70]
+[2021-02-21T16:43:05.095Z] [INFO] [#tid_eudvzXB4epGJuYzOdmkUSdHIjOwzCTyN] [BasicHttpService] [marker:http_put.200_counter:35:35]
+[2021-02-21T16:43:05.107Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] PUT /api/v1/namespaces/_/actions/utils/split overwrite=true
+[2021-02-21T16:43:05.111Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] PUT /api/v1/namespaces/_/actions/samples/wordCountAsync overwrite=true
+[2021-02-21T16:43:05.111Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.111Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.111Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:05.113Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/split) [marker:database_cacheMiss_counter:6]
+[2021-02-21T16:43:05.113Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/split' [marker:database_getDocument_start:6]
+[2021-02-21T16:43:05.114Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.114Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:6]
+[2021-02-21T16:43:05.115Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:05.119Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/wordCountAsync) [marker:database_cacheMiss_counter:11]
+[2021-02-21T16:43:05.119Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/wordCountAsync' [marker:database_getDocument_start:11]
+[2021-02-21T16:43:05.121Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [CouchDbRestStore]  [marker:database_getDocument_finish:15:9]
+[2021-02-21T16:43:05.121Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [WhiskAction] invalidating CacheKey(whisk.system/utils/split)
+[2021-02-21T16:43:05.124Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.126Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/split, rev: null' [marker:database_saveDocument_start:20]
+[2021-02-21T16:43:05.131Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [CouchDbRestStore]  [marker:database_getDocument_finish:23:12]
+[2021-02-21T16:43:05.133Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [WhiskAction] invalidating CacheKey(whisk.system/samples/wordCountAsync)
+[2021-02-21T16:43:05.139Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.140Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [CouchDbRestStore]  [marker:database_saveDocument_finish:30:10]
+[2021-02-21T16:43:05.140Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/split) Cached
+[2021-02-21T16:43:05.141Z] [INFO] [#tid_UkG42cTLTxK69FbIldzmubG5oCCTJTEE] [BasicHttpService] [marker:http_put.200_counter:35:35]
+[2021-02-21T16:43:05.142Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/wordCountAsync, rev: null' [marker:database_saveDocument_start:34]
+[2021-02-21T16:43:05.151Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] PUT /api/v1/namespaces/_/actions/utils/date overwrite=true
+[2021-02-21T16:43:05.153Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.153Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.164Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:05.166Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/date) [marker:database_cacheMiss_counter:15]
+[2021-02-21T16:43:05.167Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/date' [marker:database_getDocument_start:16]
+[2021-02-21T16:43:05.193Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [CouchDbRestStore]  [marker:database_getDocument_finish:42:26]
+[2021-02-21T16:43:05.193Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [WhiskAction] invalidating CacheKey(whisk.system/utils/date)
+[2021-02-21T16:43:05.193Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.196Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/date, rev: null' [marker:database_saveDocument_start:45]
+[2021-02-21T16:43:05.206Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [CouchDbRestStore]  [marker:database_saveDocument_finish:97:63]
+[2021-02-21T16:43:05.208Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/wordCountAsync) Cached
+[2021-02-21T16:43:05.209Z] [INFO] [#tid_KBQsM71j8rbbVnYxb2RECpl6EXmbIJpu] [BasicHttpService] [marker:http_put.200_counter:99:99]
+[2021-02-21T16:43:05.222Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [CouchDbRestStore]  [marker:database_saveDocument_finish:68:22]
+[2021-02-21T16:43:05.223Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/date) Cached
+[2021-02-21T16:43:05.224Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] PUT /api/v1/namespaces/_/actions/samples/cat overwrite=true
+[2021-02-21T16:43:05.226Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.226Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.227Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:05.228Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/cat) [marker:database_cacheMiss_counter:6]
+[2021-02-21T16:43:05.230Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/cat' [marker:database_getDocument_start:6]
+[2021-02-21T16:43:05.230Z] [INFO] [#tid_Of2e3lTmNK4N3X8BlgJoCzHTB6Hda8cH] [BasicHttpService] [marker:http_put.200_counter:77:77]
+[2021-02-21T16:43:05.236Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] PUT /api/v1/namespaces/_/actions/utils/hosturl overwrite=true
+[2021-02-21T16:43:05.236Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [CouchDbRestStore]  [marker:database_getDocument_finish:16:10]
+[2021-02-21T16:43:05.237Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [WhiskAction] invalidating CacheKey(whisk.system/samples/cat)
+[2021-02-21T16:43:05.237Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.239Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.239Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:05.242Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/cat, rev: null' [marker:database_saveDocument_start:22]
+[2021-02-21T16:43:05.242Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:8]
+[2021-02-21T16:43:05.245Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/hosturl) [marker:database_cacheMiss_counter:10]
+[2021-02-21T16:43:05.246Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/hosturl' [marker:database_getDocument_start:11]
+[2021-02-21T16:43:05.253Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [CouchDbRestStore]  [marker:database_saveDocument_finish:33:11]
+[2021-02-21T16:43:05.253Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/cat) Cached
+[2021-02-21T16:43:05.254Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [CouchDbRestStore]  [marker:database_getDocument_finish:19:8]
+[2021-02-21T16:43:05.255Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [WhiskAction] invalidating CacheKey(whisk.system/utils/hosturl)
+[2021-02-21T16:43:05.255Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.255Z] [INFO] [#tid_iKNNXIlgcRaNCBlF310L3FSEVz4IFbjm] [BasicHttpService] [marker:http_put.200_counter:35:35]
+[2021-02-21T16:43:05.263Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/hosturl, rev: null' [marker:database_saveDocument_start:28]
+[2021-02-21T16:43:05.266Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] PUT /api/v1/namespaces/_/actions/samples/countdown overwrite=true
+[2021-02-21T16:43:05.268Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.268Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.271Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:05.280Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/countdown) [marker:database_cacheMiss_counter:15]
+[2021-02-21T16:43:05.280Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/countdown' [marker:database_getDocument_start:15]
+[2021-02-21T16:43:05.281Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [CouchDbRestStore]  [marker:database_saveDocument_finish:47:19]
+[2021-02-21T16:43:05.281Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/hosturl) Cached
+[2021-02-21T16:43:05.283Z] [INFO] [#tid_mogL8HQHBMV1MqyA5IVM4wb7PDu7x7fq] [BasicHttpService] [marker:http_put.200_counter:49:49]
+[2021-02-21T16:43:05.287Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [CouchDbRestStore]  [marker:database_getDocument_finish:22:7]
+[2021-02-21T16:43:05.289Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [WhiskAction] invalidating CacheKey(whisk.system/samples/countdown)
+[2021-02-21T16:43:05.290Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.294Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/countdown, rev: null' [marker:database_saveDocument_start:28]
+[2021-02-21T16:43:05.295Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] PUT /api/v1/namespaces/_/actions/utils/echo overwrite=true
+[2021-02-21T16:43:05.298Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.302Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:8]
+[2021-02-21T16:43:05.304Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:9]
+[2021-02-21T16:43:05.307Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/echo) [marker:database_cacheMiss_counter:13]
+[2021-02-21T16:43:05.307Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/echo' [marker:database_getDocument_start:13]
+[2021-02-21T16:43:05.314Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [CouchDbRestStore]  [marker:database_getDocument_finish:19:6]
+[2021-02-21T16:43:05.314Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [WhiskAction] invalidating CacheKey(whisk.system/utils/echo)
+[2021-02-21T16:43:05.315Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.319Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/echo, rev: null' [marker:database_saveDocument_start:23]
+[2021-02-21T16:43:05.327Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [CouchDbRestStore]  [marker:database_saveDocument_finish:59:31]
+[2021-02-21T16:43:05.331Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/countdown) Cached
+[2021-02-21T16:43:05.332Z] [INFO] [#tid_3zhzCoKbK04CC5dwut9FryBHX8wsprx7] [BasicHttpService] [marker:http_put.200_counter:61:61]
+[2021-02-21T16:43:05.337Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] PUT /api/v1/namespaces/_/actions/samples/greeting overwrite=true
+[2021-02-21T16:43:05.338Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [CouchDbRestStore]  [marker:database_saveDocument_finish:44:21]
+[2021-02-21T16:43:05.338Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/echo) Cached
+[2021-02-21T16:43:05.339Z] [INFO] [#tid_t8ZifAxA0zc6fhKbFktqfJY7tIQ9SV37] [BasicHttpService] [marker:http_put.200_counter:45:45]
+[2021-02-21T16:43:05.341Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.341Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:05.343Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:05.348Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] PUT /api/v1/namespaces/_/actions/utils/sort overwrite=true
+[2021-02-21T16:43:05.349Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/greeting) [marker:database_cacheMiss_counter:12]
+[2021-02-21T16:43:05.350Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/greeting' [marker:database_getDocument_start:12]
+[2021-02-21T16:43:05.351Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.354Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:05.355Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/utils) [marker:database_cacheHit_counter:8]
+[2021-02-21T16:43:05.361Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/utils/sort) [marker:database_cacheMiss_counter:13]
+[2021-02-21T16:43:05.361Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/utils/sort' [marker:database_getDocument_start:13]
+[2021-02-21T16:43:05.362Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [CouchDbRestStore]  [marker:database_getDocument_finish:25:13]
+[2021-02-21T16:43:05.362Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [WhiskAction] invalidating CacheKey(whisk.system/samples/greeting)
+[2021-02-21T16:43:05.363Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.367Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/greeting, rev: null' [marker:database_saveDocument_start:29]
+[2021-02-21T16:43:05.368Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [CouchDbRestStore]  [marker:database_getDocument_finish:21:8]
+[2021-02-21T16:43:05.369Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [WhiskAction] invalidating CacheKey(whisk.system/utils/sort)
+[2021-02-21T16:43:05.370Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.379Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/utils/sort, rev: null' [marker:database_saveDocument_start:32]
+[2021-02-21T16:43:05.413Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [CouchDbRestStore]  [marker:database_saveDocument_finish:75:46]
+[2021-02-21T16:43:05.414Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [CouchDbRestStore]  [marker:database_saveDocument_finish:67:35]
+[2021-02-21T16:43:05.416Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [WhiskAction] write all done, caching CacheKey(whisk.system/utils/sort) Cached
+[2021-02-21T16:43:05.419Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/greeting) Cached
+[2021-02-21T16:43:05.420Z] [INFO] [#tid_XJLDwupBWBxjxW4vNZqK7aOFimAlx8Cd] [BasicHttpService] [marker:http_put.200_counter:69:69]
+[2021-02-21T16:43:05.421Z] [INFO] [#tid_P7l8342CSzUbBZj50PxUvW5512xbzUbu] [BasicHttpService] [marker:http_put.200_counter:84:84]
+[2021-02-21T16:43:05.431Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] PUT /api/v1/namespaces/_/actions/samples/wordCount overwrite=true
+[2021-02-21T16:43:05.434Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.435Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:05.437Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:05.443Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/wordCount) [marker:database_cacheMiss_counter:12]
+[2021-02-21T16:43:05.443Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/wordCount' [marker:database_getDocument_start:12]
+[2021-02-21T16:43:05.451Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [CouchDbRestStore]  [marker:database_getDocument_finish:21:8]
+[2021-02-21T16:43:05.452Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [WhiskAction] invalidating CacheKey(whisk.system/samples/wordCount)
+[2021-02-21T16:43:05.454Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.460Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/wordCount, rev: null' [marker:database_saveDocument_start:29]
+[2021-02-21T16:43:05.519Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [CouchDbRestStore]  [marker:database_saveDocument_finish:89:60]
+[2021-02-21T16:43:05.520Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/wordCount) Cached
+[2021-02-21T16:43:05.520Z] [INFO] [#tid_NCFqubqkklmeIt0y4EvBULq4Kb6JCKMd] [BasicHttpService] [marker:http_put.200_counter:90:90]
+[2021-02-21T16:43:05.527Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] PUT /api/v1/namespaces/_/actions/samples/helloWorld overwrite=true
+[2021-02-21T16:43:05.528Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.528Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:05.529Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.532Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/helloWorld) [marker:database_cacheMiss_counter:6]
+[2021-02-21T16:43:05.532Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/helloWorld' [marker:database_getDocument_start:6]
+[2021-02-21T16:43:05.540Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [CouchDbRestStore]  [marker:database_getDocument_finish:14:8]
+[2021-02-21T16:43:05.540Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [WhiskAction] invalidating CacheKey(whisk.system/samples/helloWorld)
+[2021-02-21T16:43:05.541Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.543Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/helloWorld, rev: null' [marker:database_saveDocument_start:17]
+[2021-02-21T16:43:05.557Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [CouchDbRestStore]  [marker:database_saveDocument_finish:30:13]
+[2021-02-21T16:43:05.557Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/helloWorld) Cached
+[2021-02-21T16:43:05.558Z] [INFO] [#tid_ObsInh5RCuVgAJDc91NpXVL8hx4wA6v4] [BasicHttpService] [marker:http_put.200_counter:32:32]
+[2021-02-21T16:43:05.565Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] PUT /api/v1/namespaces/_/actions/samples/curl overwrite=true
+[2021-02-21T16:43:05.566Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.566Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:05.567Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.570Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/curl) [marker:database_cacheMiss_counter:6]
+[2021-02-21T16:43:05.570Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/curl' [marker:database_getDocument_start:6]
+[2021-02-21T16:43:05.584Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [CouchDbRestStore]  [marker:database_getDocument_finish:20:13]
+[2021-02-21T16:43:05.584Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [WhiskAction] invalidating CacheKey(whisk.system/samples/curl)
+[2021-02-21T16:43:05.585Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.594Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/curl, rev: null' [marker:database_saveDocument_start:29]
+[2021-02-21T16:43:05.631Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [CouchDbRestStore]  [marker:database_saveDocument_finish:67:37]
+[2021-02-21T16:43:05.631Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/curl) Cached
+[2021-02-21T16:43:05.632Z] [INFO] [#tid_8yi3kkU66yvwaDHJBdLY8RJbIYzrQXf5] [BasicHttpService] [marker:http_put.200_counter:68:68]
+[2021-02-21T16:43:05.639Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] PUT /api/v1/namespaces/_/actions/samples/printParams overwrite=true
+[2021-02-21T16:43:05.641Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:05.641Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:05.642Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/samples) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:05.645Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/samples/printParams) [marker:database_cacheMiss_counter:6]
+[2021-02-21T16:43:05.645Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/samples/printParams' [marker:database_getDocument_start:6]
+[2021-02-21T16:43:05.649Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [CouchDbRestStore]  [marker:database_getDocument_finish:9:3]
+[2021-02-21T16:43:05.649Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [WhiskAction] invalidating CacheKey(whisk.system/samples/printParams)
+[2021-02-21T16:43:05.649Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:05.651Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/samples/printParams, rev: null' [marker:database_saveDocument_start:12]
+[2021-02-21T16:43:05.663Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [CouchDbRestStore]  [marker:database_saveDocument_finish:23:11]
+[2021-02-21T16:43:05.663Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [WhiskAction] write all done, caching CacheKey(whisk.system/samples/printParams) Cached
+[2021-02-21T16:43:05.663Z] [INFO] [#tid_jBIfJlTGLNhfNPqTgw1JE3rzFCRQqokw] [BasicHttpService] [marker:http_put.200_counter:24:24]
+[2021-02-21T16:43:07.236Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] PUT /api/v1/namespaces/_/packages/alarms overwrite=true
+[2021-02-21T16:43:07.237Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:07.237Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:07.240Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/alarms) [marker:database_cacheMiss_counter:3]
+[2021-02-21T16:43:07.240Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms' [marker:database_getDocument_start:3]
+[2021-02-21T16:43:07.243Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [CouchDbRestStore]  [marker:database_getDocument_finish:7:4]
+[2021-02-21T16:43:07.243Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [WhiskPackage] invalidating CacheKey(whisk.system/alarms)
+[2021-02-21T16:43:07.244Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:07.244Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/alarms, rev: null' [marker:database_saveDocument_start:8]
+[2021-02-21T16:43:07.262Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [CouchDbRestStore]  [marker:database_saveDocument_finish:25:17]
+[2021-02-21T16:43:07.262Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [WhiskPackage] write all done, caching CacheKey(whisk.system/alarms) Cached
+[2021-02-21T16:43:07.262Z] [INFO] [#tid_l7FrOfEjXVYihaUfFTe3cfNeazBxkWo9] [BasicHttpService] [marker:http_put.200_counter:26:26]
+[2021-02-21T16:43:13.616Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] GET /api/v1/namespaces/_/actions/alarms/alarm code=false
+[2021-02-21T16:43:13.617Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.618Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.619Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:13.619Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:13.639Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:22]
+[2021-02-21T16:43:13.654Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:37]
+[2021-02-21T16:43:13.654Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/alarms/alarm) [marker:database_cacheMiss_counter:38]
+[2021-02-21T16:43:13.654Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms/alarm' [marker:database_getDocument_start:38]
+[2021-02-21T16:43:13.657Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [CouchDbRestStore]  [marker:database_getDocument_finish:41:3]
+[2021-02-21T16:43:13.657Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [WhiskActionMetaData] invalidating CacheKey(whisk.system/alarms/alarm)
+[2021-02-21T16:43:13.658Z] [INFO] [#tid_TPjjRLUTasMf2LgOcX87eSJipigfCmgF] [BasicHttpService] [marker:http_get.404_counter:42:42]
+[2021-02-21T16:43:13.661Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] PUT /api/v1/namespaces/_/actions/alarms/alarm overwrite=true
+[2021-02-21T16:43:13.661Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.662Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:13.663Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.665Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/alarms/alarm) [marker:database_cacheMiss_counter:4]
+[2021-02-21T16:43:13.665Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms/alarm' [marker:database_getDocument_start:4]
+[2021-02-21T16:43:13.668Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [CouchDbRestStore]  [marker:database_getDocument_finish:7:3]
+[2021-02-21T16:43:13.668Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [WhiskAction] invalidating CacheKey(whisk.system/alarms/alarm)
+[2021-02-21T16:43:13.669Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:13.671Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/alarms/alarm, rev: null' [marker:database_saveDocument_start:10]
+[2021-02-21T16:43:13.691Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [CouchDbRestStore]  [marker:database_saveDocument_finish:30:20]
+[2021-02-21T16:43:13.691Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [WhiskAction] write all done, caching CacheKey(whisk.system/alarms/alarm) Cached
+[2021-02-21T16:43:13.692Z] [INFO] [#tid_Gis9fhuY5f3VqVW8CtammLfUzUJq3QmR] [BasicHttpService] [marker:http_put.200_counter:31:31]
+[2021-02-21T16:43:13.716Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] GET /api/v1/namespaces/_/actions/alarms/once code=false
+[2021-02-21T16:43:13.717Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.717Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:13.718Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.719Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.736Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:20]
+[2021-02-21T16:43:13.756Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:40]
+[2021-02-21T16:43:13.756Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/alarms/once) [marker:database_cacheMiss_counter:40]
+[2021-02-21T16:43:13.756Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms/once' [marker:database_getDocument_start:40]
+[2021-02-21T16:43:13.759Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [CouchDbRestStore]  [marker:database_getDocument_finish:43:3]
+[2021-02-21T16:43:13.759Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [WhiskActionMetaData] invalidating CacheKey(whisk.system/alarms/once)
+[2021-02-21T16:43:13.760Z] [INFO] [#tid_z5hryquZfj4WU50TzbmDI9WrjDtb2rXS] [BasicHttpService] [marker:http_get.404_counter:43:43]
+[2021-02-21T16:43:13.763Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] PUT /api/v1/namespaces/_/actions/alarms/once overwrite=true
+[2021-02-21T16:43:13.764Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.764Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.764Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.767Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/alarms/once) [marker:database_cacheMiss_counter:5]
+[2021-02-21T16:43:13.767Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms/once' [marker:database_getDocument_start:5]
+[2021-02-21T16:43:13.769Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [CouchDbRestStore]  [marker:database_getDocument_finish:7:2]
+[2021-02-21T16:43:13.769Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [WhiskAction] invalidating CacheKey(whisk.system/alarms/once)
+[2021-02-21T16:43:13.770Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:13.772Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/alarms/once, rev: null' [marker:database_saveDocument_start:10]
+[2021-02-21T16:43:13.779Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [CouchDbRestStore]  [marker:database_saveDocument_finish:17:7]
+[2021-02-21T16:43:13.779Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [WhiskAction] write all done, caching CacheKey(whisk.system/alarms/once) Cached
+[2021-02-21T16:43:13.780Z] [INFO] [#tid_Bvc2EvsmjCtqSBmlrc5AV9g6htxI8oHx] [BasicHttpService] [marker:http_put.200_counter:18:18]
+[2021-02-21T16:43:13.801Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] GET /api/v1/namespaces/_/actions/alarms/interval code=false
+[2021-02-21T16:43:13.802Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.803Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.803Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.810Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:13.821Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:20]
+[2021-02-21T16:43:13.839Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:38]
+[2021-02-21T16:43:13.840Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/alarms/interval) [marker:database_cacheMiss_counter:39]
+[2021-02-21T16:43:13.840Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms/interval' [marker:database_getDocument_start:39]
+[2021-02-21T16:43:13.853Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [CouchDbRestStore]  [marker:database_getDocument_finish:44:5]
+[2021-02-21T16:43:13.853Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [WhiskActionMetaData] invalidating CacheKey(whisk.system/alarms/interval)
+[2021-02-21T16:43:13.853Z] [INFO] [#tid_VmvK8PwsQXHJ9WXhNI92M8Z38Fy09JkD] [BasicHttpService] [marker:http_get.404_counter:48:48]
+[2021-02-21T16:43:13.854Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] PUT /api/v1/namespaces/_/actions/alarms/interval overwrite=true
+[2021-02-21T16:43:13.855Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.855Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:13.856Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarms) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.858Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/alarms/interval) [marker:database_cacheMiss_counter:4]
+[2021-02-21T16:43:13.858Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarms/interval' [marker:database_getDocument_start:4]
+[2021-02-21T16:43:13.861Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [CouchDbRestStore]  [marker:database_getDocument_finish:7:3]
+[2021-02-21T16:43:13.861Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [WhiskAction] invalidating CacheKey(whisk.system/alarms/interval)
+[2021-02-21T16:43:13.861Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:13.865Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/alarms/interval, rev: null' [marker:database_saveDocument_start:11]
+[2021-02-21T16:43:13.872Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [CouchDbRestStore]  [marker:database_saveDocument_finish:17:6]
+[2021-02-21T16:43:13.872Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [WhiskAction] write all done, caching CacheKey(whisk.system/alarms/interval) Cached
+[2021-02-21T16:43:13.873Z] [INFO] [#tid_lxINpS6vx23tLJ95MVdm5RdMtf7gslAz] [BasicHttpService] [marker:http_put.200_counter:18:18]
+[2021-02-21T16:43:13.897Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] PUT /api/v1/namespaces/_/packages/alarmsWeb overwrite=true
+[2021-02-21T16:43:13.898Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:13.898Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:13.900Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/alarmsWeb) [marker:database_cacheMiss_counter:4]
+[2021-02-21T16:43:13.900Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarmsWeb' [marker:database_getDocument_start:4]
+[2021-02-21T16:43:13.903Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [CouchDbRestStore]  [marker:database_getDocument_finish:7:3]
+[2021-02-21T16:43:13.903Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [WhiskPackage] invalidating CacheKey(whisk.system/alarmsWeb)
+[2021-02-21T16:43:13.903Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:13.904Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/alarmsWeb, rev: null' [marker:database_saveDocument_start:8]
+[2021-02-21T16:43:13.911Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [CouchDbRestStore]  [marker:database_saveDocument_finish:15:7]
+[2021-02-21T16:43:13.911Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [WhiskPackage] write all done, caching CacheKey(whisk.system/alarmsWeb) Cached
+[2021-02-21T16:43:13.912Z] [INFO] [#tid_JYpXShi1DoychDk1gJpaABKs1q44081u] [BasicHttpService] [marker:http_put.200_counter:16:16]
+[2021-02-21T16:43:15.757Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] GET /api/v1/namespaces/_/actions/alarmsWeb/alarmWebAction code=false
+[2021-02-21T16:43:15.758Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:15.759Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:15.760Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarmsWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:15.760Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarmsWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:15.779Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarmsWeb) [marker:database_cacheHit_counter:21]
+[2021-02-21T16:43:15.794Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarmsWeb) [marker:database_cacheHit_counter:36]
+[2021-02-21T16:43:15.794Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/alarmsWeb/alarmWebAction) [marker:database_cacheMiss_counter:37]
+[2021-02-21T16:43:15.794Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarmsWeb/alarmWebAction' [marker:database_getDocument_start:37]
+[2021-02-21T16:43:15.797Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [CouchDbRestStore]  [marker:database_getDocument_finish:40:3]
+[2021-02-21T16:43:15.797Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [WhiskActionMetaData] invalidating CacheKey(whisk.system/alarmsWeb/alarmWebAction)
+[2021-02-21T16:43:15.798Z] [INFO] [#tid_MPsZh8bVZuRgF7LQdvOwAPDoy5m1lDpb] [BasicHttpService] [marker:http_get.404_counter:40:40]
+[2021-02-21T16:43:15.830Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] PUT /api/v1/namespaces/_/actions/alarmsWeb/alarmWebAction overwrite=true
+[2021-02-21T16:43:15.834Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:15.835Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:15.836Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/alarmsWeb) [marker:database_cacheHit_counter:6]
+[2021-02-21T16:43:16.179Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/alarmsWeb/alarmWebAction) [marker:database_cacheMiss_counter:349]
+[2021-02-21T16:43:16.179Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/alarmsWeb/alarmWebAction' [marker:database_getDocument_start:349]
+[2021-02-21T16:43:16.181Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [CouchDbRestStore]  [marker:database_getDocument_finish:351:2]
+[2021-02-21T16:43:16.181Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [WhiskAction] invalidating CacheKey(whisk.system/alarmsWeb/alarmWebAction)
+[2021-02-21T16:43:16.189Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:16.192Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/alarmsWeb/alarmWebAction, rev: null' [marker:database_saveDocument_start:362]
+[2021-02-21T16:43:16.201Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [CouchDbRestStore]  [marker:database_saveDocument_finish:371:9]
+[2021-02-21T16:43:16.201Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '05bf7e54-7a9a-4955-bf7e-547a9aa9557e' of document 'id: whisk.system/alarmsWeb/alarmWebAction, rev: 1-71809704dd75737bdc585d194762c4c6' [marker:database_saveDocumentAttachment_start:371]
+[2021-02-21T16:43:16.319Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:489:118]
+[2021-02-21T16:43:16.328Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [WhiskAction] write all done, caching CacheKey(whisk.system/alarmsWeb/alarmWebAction) Cached
+[2021-02-21T16:43:16.372Z] [INFO] [#tid_Up8kEOXGI0lwN0A1XTusEOC828MNOOoI] [BasicHttpService] [marker:http_put.200_counter:542:542]
+[2021-02-21T16:43:18.340Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] PUT /api/v1/namespaces/_/packages/messaging overwrite=true
+[2021-02-21T16:43:18.341Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:18.341Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:18.343Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/messaging) [marker:database_cacheMiss_counter:3]
+[2021-02-21T16:43:18.343Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging' [marker:database_getDocument_start:3]
+[2021-02-21T16:43:18.346Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [CouchDbRestStore]  [marker:database_getDocument_finish:6:2]
+[2021-02-21T16:43:18.346Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [WhiskPackage] invalidating CacheKey(whisk.system/messaging)
+[2021-02-21T16:43:18.346Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:18.346Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messaging, rev: null' [marker:database_saveDocument_start:6]
+[2021-02-21T16:43:18.354Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [CouchDbRestStore]  [marker:database_saveDocument_finish:14:8]
+[2021-02-21T16:43:18.354Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [WhiskPackage] write all done, caching CacheKey(whisk.system/messaging) Cached
+[2021-02-21T16:43:18.355Z] [INFO] [#tid_RwFvIXEMWSQP7V8Sm3PiXt7aRh3Ii69v] [BasicHttpService] [marker:http_put.200_counter:14:14]
+[2021-02-21T16:43:21.563Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] GET /api/v1/namespaces/_/actions/messaging/kafkaFeed code=false
+[2021-02-21T16:43:21.564Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:21.564Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:21.565Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:21.565Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:21.582Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:19]
+[2021-02-21T16:43:21.598Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:35]
+[2021-02-21T16:43:21.599Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/messaging/kafkaFeed) [marker:database_cacheMiss_counter:36]
+[2021-02-21T16:43:21.599Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/kafkaFeed' [marker:database_getDocument_start:36]
+[2021-02-21T16:43:21.606Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [CouchDbRestStore]  [marker:database_getDocument_finish:42:6]
+[2021-02-21T16:43:21.607Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [WhiskActionMetaData] invalidating CacheKey(whisk.system/messaging/kafkaFeed)
+[2021-02-21T16:43:21.609Z] [INFO] [#tid_WsCUYoquhSdRzNGypSt0vR5aQULxQmJO] [BasicHttpService] [marker:http_get.404_counter:46:46]
+[2021-02-21T16:43:21.645Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] PUT /api/v1/namespaces/_/actions/messaging/kafkaFeed overwrite=true
+[2021-02-21T16:43:21.668Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:21.669Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:25]
+[2021-02-21T16:43:21.670Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:26]
+[2021-02-21T16:43:22.115Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/messaging/kafkaFeed) [marker:database_cacheMiss_counter:471]
+[2021-02-21T16:43:22.115Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/kafkaFeed' [marker:database_getDocument_start:471]
+[2021-02-21T16:43:22.118Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [CouchDbRestStore]  [marker:database_getDocument_finish:474:3]
+[2021-02-21T16:43:22.118Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [WhiskAction] invalidating CacheKey(whisk.system/messaging/kafkaFeed)
+[2021-02-21T16:43:22.133Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:22.136Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messaging/kafkaFeed, rev: null' [marker:database_saveDocument_start:492]
+[2021-02-21T16:43:22.142Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [CouchDbRestStore]  [marker:database_saveDocument_finish:498:6]
+[2021-02-21T16:43:22.142Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '01914ac2-d788-477b-914a-c2d788877b18' of document 'id: whisk.system/messaging/kafkaFeed, rev: 1-34b8408601a2e4f597e2be9c8d8f29de' [marker:database_saveDocumentAttachment_start:498]
+[2021-02-21T16:43:22.233Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:589:91]
+[2021-02-21T16:43:22.244Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [WhiskAction] write all done, caching CacheKey(whisk.system/messaging/kafkaFeed) Cached
+[2021-02-21T16:43:22.284Z] [INFO] [#tid_CbtF1G95Jm6PS2TtDGE7lIa9AnrFtqwj] [BasicHttpService] [marker:http_put.200_counter:640:640]
+[2021-02-21T16:43:22.401Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] PUT /api/v1/namespaces/_/packages/messagingWeb overwrite=true
+[2021-02-21T16:43:22.402Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:22.402Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:22.403Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [WhiskPackage] [GET] serving from datastore: CacheKey(whisk.system/messagingWeb) [marker:database_cacheMiss_counter:2]
+[2021-02-21T16:43:22.403Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messagingWeb' [marker:database_getDocument_start:2]
+[2021-02-21T16:43:22.405Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [CouchDbRestStore]  [marker:database_getDocument_finish:4:2]
+[2021-02-21T16:43:22.405Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [WhiskPackage] invalidating CacheKey(whisk.system/messagingWeb)
+[2021-02-21T16:43:22.406Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [WhiskPackage] write initiated on new cache entry
+[2021-02-21T16:43:22.406Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messagingWeb, rev: null' [marker:database_saveDocument_start:5]
+[2021-02-21T16:43:22.412Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [CouchDbRestStore]  [marker:database_saveDocument_finish:11:6]
+[2021-02-21T16:43:22.412Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [WhiskPackage] write all done, caching CacheKey(whisk.system/messagingWeb) Cached
+[2021-02-21T16:43:22.413Z] [INFO] [#tid_zRSITKSzwSsFOu56CqXSjs4Mmc2iGmOC] [BasicHttpService] [marker:http_put.200_counter:12:12]
+[2021-02-21T16:43:26.933Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] GET /api/v1/namespaces/_/actions/messagingWeb/kafkaFeedWeb code=false
+[2021-02-21T16:43:26.934Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:26.935Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:26.936Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:26.936Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:26.952Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:19]
+[2021-02-21T16:43:26.968Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:35]
+[2021-02-21T16:43:26.968Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/messagingWeb/kafkaFeedWeb) [marker:database_cacheMiss_counter:35]
+[2021-02-21T16:43:26.968Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messagingWeb/kafkaFeedWeb' [marker:database_getDocument_start:35]
+[2021-02-21T16:43:26.977Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [CouchDbRestStore]  [marker:database_getDocument_finish:44:9]
+[2021-02-21T16:43:26.977Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [WhiskActionMetaData] invalidating CacheKey(whisk.system/messagingWeb/kafkaFeedWeb)
+[2021-02-21T16:43:26.977Z] [INFO] [#tid_DcJEPUMdoOTJkG0zk26ObOXkQ5apis3Z] [BasicHttpService] [marker:http_get.404_counter:44:44]
+[2021-02-21T16:43:27.053Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] PUT /api/v1/namespaces/_/actions/messagingWeb/kafkaFeedWeb overwrite=true
+[2021-02-21T16:43:27.058Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:27.058Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:6]
+[2021-02-21T16:43:27.059Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:27.484Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/messagingWeb/kafkaFeedWeb) [marker:database_cacheMiss_counter:432]
+[2021-02-21T16:43:27.484Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messagingWeb/kafkaFeedWeb' [marker:database_getDocument_start:432]
+[2021-02-21T16:43:27.487Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [CouchDbRestStore]  [marker:database_getDocument_finish:435:3]
+[2021-02-21T16:43:27.487Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [WhiskAction] invalidating CacheKey(whisk.system/messagingWeb/kafkaFeedWeb)
+[2021-02-21T16:43:27.497Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:27.503Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messagingWeb/kafkaFeedWeb, rev: null' [marker:database_saveDocument_start:451]
+[2021-02-21T16:43:27.515Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [CouchDbRestStore]  [marker:database_saveDocument_finish:463:12]
+[2021-02-21T16:43:27.515Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '0dc96606-ede1-41a3-8966-06ede131a320' of document 'id: whisk.system/messagingWeb/kafkaFeedWeb, rev: 1-d39a58f9bdbdee1d0063fa42cdefa82a' [marker:database_saveDocumentAttachment_start:463]
+[2021-02-21T16:43:27.669Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:617:154]
+[2021-02-21T16:43:27.703Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [WhiskAction] write all done, caching CacheKey(whisk.system/messagingWeb/kafkaFeedWeb) Cached
+[2021-02-21T16:43:27.756Z] [INFO] [#tid_3PLXullX0k8aYDhe96hxmrDoDhU9tEoS] [BasicHttpService] [marker:http_put.200_counter:704:704]
+[2021-02-21T16:43:27.876Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] GET /api/v1/namespaces/_/actions/messaging/kafkaProduce code=false
+[2021-02-21T16:43:27.878Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:27.878Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:27.878Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:27.879Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:27.896Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:18]
+[2021-02-21T16:43:27.910Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:34]
+[2021-02-21T16:43:27.911Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/messaging/kafkaProduce) [marker:database_cacheMiss_counter:34]
+[2021-02-21T16:43:27.911Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/kafkaProduce' [marker:database_getDocument_start:34]
+[2021-02-21T16:43:27.913Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [CouchDbRestStore]  [marker:database_getDocument_finish:37:3]
+[2021-02-21T16:43:27.913Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [WhiskActionMetaData] invalidating CacheKey(whisk.system/messaging/kafkaProduce)
+[2021-02-21T16:43:27.913Z] [INFO] [#tid_f3FtXYzIi5y1MqZzdSbFCxT6TZom9Y21] [BasicHttpService] [marker:http_get.404_counter:37:37]
+[2021-02-21T16:43:27.916Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] PUT /api/v1/namespaces/_/actions/messaging/kafkaProduce overwrite=true
+[2021-02-21T16:43:27.917Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:27.917Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:27.918Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:27.920Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/messaging/kafkaProduce) [marker:database_cacheMiss_counter:3]
+[2021-02-21T16:43:27.920Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/kafkaProduce' [marker:database_getDocument_start:4]
+[2021-02-21T16:43:27.922Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [CouchDbRestStore]  [marker:database_getDocument_finish:6:2]
+[2021-02-21T16:43:27.923Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [WhiskAction] invalidating CacheKey(whisk.system/messaging/kafkaProduce)
+[2021-02-21T16:43:27.923Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:27.926Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messaging/kafkaProduce, rev: null' [marker:database_saveDocument_start:9]
+[2021-02-21T16:43:27.935Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [CouchDbRestStore]  [marker:database_saveDocument_finish:19:10]
+[2021-02-21T16:43:27.936Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [WhiskAction] write all done, caching CacheKey(whisk.system/messaging/kafkaProduce) Cached
+[2021-02-21T16:43:27.937Z] [INFO] [#tid_GhxuCs8DGvCCGmddYYdJ2a7imclCknSg] [BasicHttpService] [marker:http_put.200_counter:21:21]
+[2021-02-21T16:43:27.966Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] PUT /api/v1/namespaces/_/packages/messaging overwrite=true
+[2021-02-21T16:43:27.967Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:27.967Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:27.971Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:5]
+[2021-02-21T16:43:27.973Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [WhiskPackage] write initiated on existing cache entry, invalidating CacheKey(whisk.system/messaging), tid Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY, state WriteInProgress
+[2021-02-21T16:43:27.973Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messaging, rev: 1-8027efbfa85b13266d3a2d2f679bbc3f' [marker:database_saveDocument_start:7]
+[2021-02-21T16:43:27.981Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [CouchDbRestStore]  [marker:database_saveDocument_finish:14:7]
+[2021-02-21T16:43:27.981Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [WhiskPackage] write all done, caching CacheKey(whisk.system/messaging) Cached
+[2021-02-21T16:43:27.981Z] [INFO] [#tid_Q0W66oWIsbaf6ZVyKHKNQNtFJqIwB2mY] [BasicHttpService] [marker:http_put.200_counter:15:15]
+[2021-02-21T16:43:31.174Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] PUT /api/v1/namespaces/_/actions/hello overwrite=false
+[2021-02-21T16:43:31.178Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.179Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [Identity] [GET] serving from datastore: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheMiss_counter:5]
+[2021-02-21T16:43:31.179Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [CouchDbRestStore] [QUERY] 'test_subjects' searching 'subjects.v2.0.0/identities [marker:database_queryView_start:5]
+[2021-02-21T16:43:31.190Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [CouchDbRestStore]  [marker:database_queryView_finish:15:10]
+[2021-02-21T16:43:31.192Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [WhiskAction] [GET] serving from datastore: CacheKey(guest/hello) [marker:database_cacheMiss_counter:17]
+[2021-02-21T16:43:31.192Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/hello' [marker:database_getDocument_start:18]
+[2021-02-21T16:43:31.197Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [CouchDbRestStore]  [marker:database_getDocument_finish:23:5]
+[2021-02-21T16:43:31.197Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [WhiskAction] invalidating CacheKey(guest/hello)
+[2021-02-21T16:43:31.202Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:31.208Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: guest/hello, rev: null' [marker:database_saveDocument_start:34]
+[2021-02-21T16:43:31.214Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [CouchDbRestStore]  [marker:database_saveDocument_finish:40:6]
+[2021-02-21T16:43:31.214Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [WhiskAction] write all done, caching CacheKey(guest/hello) Cached
+[2021-02-21T16:43:31.215Z] [INFO] [#tid_ZRhOPhlQ9I794g7kzzmvxqcIxbh06kmY] [BasicHttpService] [marker:http_put.200_counter:41:41]
+[2021-02-21T16:43:31.237Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] POST /api/v1/namespaces/_/actions/hello blocking=true&result=true
+[2021-02-21T16:43:31.238Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.238Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [Identity] [GET] serving from cache: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:31.301Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(guest/hello) [marker:database_cacheMiss_counter:64]
+[2021-02-21T16:43:31.301Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/hello' [marker:database_getDocument_start:64]
+[2021-02-21T16:43:31.304Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [CouchDbRestStore]  [marker:database_getDocument_finish:67:3]
+[2021-02-21T16:43:31.314Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ActionsApi]  [marker:controller_blockingActivation_start:76]
+[2021-02-21T16:43:31.314Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ActionsApi] action activation id: 2545c6b202ae470785c6b202aed70776 [marker:controller_loadbalancer_start:77]
+[2021-02-21T16:43:31.315Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] deciding on invoker for guest/hello
+[2021-02-21T16:43:31.315Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] transId: #tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH
+[2021-02-21T16:43:31.315Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] action: guest/hello@0.0.1
+[2021-02-21T16:43:31.315Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] revision: 1-12738440b0b76e0e4095d6cf1a97f997
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] user: Identity(guest,Namespace(guest,23bc46b1-71f6-4ed5-8c54-816aa4f8c502),23bc46b1-71f6-4ed5-8c54-816aa4f8c502,Set(READ, PUT, DELETE, ACTIVATE),UserLimits(None,None,None,None,None))
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] activationId: 2545c6b202ae470785c6b202aed70776
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] rootControllerIndex: controller0
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] content: Some({"name":"Yolotanker"})
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] initArgs: Set()
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] lockedArgs: Map()
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] cause: None
+[2021-02-21T16:43:31.316Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] traceContext: None
+[2021-02-21T16:43:31.321Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] Number of healthy invokers available: 3
+[2021-02-21T16:43:31.321Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] Invoker char is o -> 111, or mapped: 0
+[2021-02-21T16:43:31.322Z] [WARN] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [THESIS] Chose invoker0 by deliberate assignment.
+[2021-02-21T16:43:31.323Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] [OWN] scheduled activation 2545c6b202ae470785c6b202aed70776, action 'guest/hello@0.0.1', ns 'guest', mem limit 256 MB (std), time limit 60000 ms (std) to invoker0/owdev-invoker-0
+[2021-02-21T16:43:31.324Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id '2545c6b202ae470785c6b202aed70776' [marker:controller_kafka_start:87]
+[2021-02-21T16:43:31.326Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] posted to invoker0[0][2] [marker:controller_kafka_finish:89:2]
+[2021-02-21T16:43:31.326Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ActionsApi]  [marker:controller_loadbalancer_finish:89:12]
+[2021-02-21T16:43:31.622Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] received completion ack for '2545c6b202ae470785c6b202aed70776', system error=false
+[2021-02-21T16:43:31.629Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ThesisNetworkBalancer] received result ack for '2545c6b202ae470785c6b202aed70776'
+[2021-02-21T16:43:31.629Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [ActionsApi]  [marker:controller_blockingActivation_finish:392:315]
+[2021-02-21T16:43:31.631Z] [INFO] [#tid_IzZXAz3MSjFKeqcc08GrtxMKXlE7ettH] [BasicHttpService] [marker:http_post.200_counter:394:394]
+[2021-02-21T16:43:31.662Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] DELETE /api/v1/namespaces/_/actions/hello 
+[2021-02-21T16:43:31.664Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.664Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [Identity] [GET] serving from cache: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:31.666Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [WhiskAction] [GET] serving from cache: CacheKey(guest/hello) [marker:database_cacheHit_counter:4]
+[2021-02-21T16:43:31.667Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [WhiskAction] invalidating CacheKey(guest/hello) on delete
+[2021-02-21T16:43:31.668Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [CouchDbRestStore] [DEL] 'test_whisks' deleting document: 'id: guest/hello, rev: 1-12738440b0b76e0e4095d6cf1a97f997' [marker:database_deleteDocument_start:6]
+[2021-02-21T16:43:31.685Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [CouchDbRestStore]  [marker:database_deleteDocument_finish:22:15]
+[2021-02-21T16:43:31.688Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [WhiskAction] invalidating CacheKey(guest/hello)
+[2021-02-21T16:43:31.688Z] [INFO] [#tid_dbf0IiV2nXa78zI7pOg6vH7z9ixvfyNT] [BasicHttpService] [marker:http_delete.200_counter:24:24]
+[2021-02-21T16:43:31.721Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] PUT /api/v1/namespaces/_/actions/triple overwrite=false
+[2021-02-21T16:43:31.723Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.723Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [Identity] [GET] serving from cache: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:31.726Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [WhiskAction] [GET] serving from datastore: CacheKey(guest/triple) [marker:database_cacheMiss_counter:5]
+[2021-02-21T16:43:31.727Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/triple' [marker:database_getDocument_start:5]
+[2021-02-21T16:43:31.731Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [CouchDbRestStore]  [marker:database_getDocument_finish:10:5]
+[2021-02-21T16:43:31.731Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [WhiskAction] invalidating CacheKey(guest/triple)
+[2021-02-21T16:43:31.733Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:31.743Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: guest/triple, rev: null' [marker:database_saveDocument_start:22]
+[2021-02-21T16:43:31.752Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [CouchDbRestStore]  [marker:database_saveDocument_finish:31:9]
+[2021-02-21T16:43:31.753Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [WhiskAction] write all done, caching CacheKey(guest/triple) Cached
+[2021-02-21T16:43:31.753Z] [INFO] [#tid_ANYO36H2MKP80UfREA8Oc2AxeGdZEMMU] [BasicHttpService] [marker:http_put.200_counter:32:32]
+[2021-02-21T16:43:31.782Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] PUT /api/v1/namespaces/_/actions/increment overwrite=false
+[2021-02-21T16:43:31.782Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.782Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [Identity] [GET] serving from cache: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:31.784Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [WhiskAction] [GET] serving from datastore: CacheKey(guest/increment) [marker:database_cacheMiss_counter:3]
+[2021-02-21T16:43:31.785Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/increment' [marker:database_getDocument_start:3]
+[2021-02-21T16:43:31.788Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [CouchDbRestStore]  [marker:database_getDocument_finish:7:4]
+[2021-02-21T16:43:31.789Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [WhiskAction] invalidating CacheKey(guest/increment)
+[2021-02-21T16:43:31.789Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:31.794Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: guest/increment, rev: null' [marker:database_saveDocument_start:13]
+[2021-02-21T16:43:31.803Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [CouchDbRestStore]  [marker:database_saveDocument_finish:22:9]
+[2021-02-21T16:43:31.804Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [WhiskAction] write all done, caching CacheKey(guest/increment) Cached
+[2021-02-21T16:43:31.804Z] [INFO] [#tid_Yzh8tyBz0WwaAEtWrFJ8gPcD33QXogi1] [BasicHttpService] [marker:http_put.200_counter:23:23]
+[2021-02-21T16:43:31.837Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] PUT /api/v1/namespaces/_/actions/tripleAndIncrement overwrite=false
+[2021-02-21T16:43:31.838Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.838Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [Identity] [GET] serving from cache: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:31.839Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [WhiskAction] [GET] serving from datastore: CacheKey(guest/tripleAndIncrement) [marker:database_cacheMiss_counter:2]
+[2021-02-21T16:43:31.839Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/tripleAndIncrement' [marker:database_getDocument_start:2]
+[2021-02-21T16:43:31.843Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [CouchDbRestStore]  [marker:database_getDocument_finish:6:4]
+[2021-02-21T16:43:31.844Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [WhiskAction] invalidating CacheKey(guest/tripleAndIncrement)
+[2021-02-21T16:43:31.844Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:31.847Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: guest/tripleAndIncrement, rev: null' [marker:database_saveDocument_start:9]
+[2021-02-21T16:43:31.856Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [CouchDbRestStore]  [marker:database_saveDocument_finish:19:10]
+[2021-02-21T16:43:31.856Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [WhiskAction] write all done, caching CacheKey(guest/tripleAndIncrement) Cached
+[2021-02-21T16:43:31.857Z] [INFO] [#tid_ALLVqRnKBFrhcQU7iHTFHOTkNltDCb4R] [BasicHttpService] [marker:http_put.200_counter:20:20]
+[2021-02-21T16:43:31.881Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] POST /api/v1/namespaces/_/actions/tripleAndIncrement blocking=true&result=true
+[2021-02-21T16:43:31.883Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [BasicAuthenticationDirective] authenticate: 23bc46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:31.883Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [Identity] [GET] serving from cache: CacheKey(23bc46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:31.885Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(guest/tripleAndIncrement) [marker:database_cacheMiss_counter:4]
+[2021-02-21T16:43:31.885Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/tripleAndIncrement' [marker:database_getDocument_start:4]
+[2021-02-21T16:43:31.890Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [CouchDbRestStore]  [marker:database_getDocument_finish:9:4]
+[2021-02-21T16:43:31.893Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [ActionsApi] invoking composition ExecutableWhiskActionMetaData/guest/tripleAndIncrement@0.0.1 topmost true activationid 'ab8658eed74248ef8658eed74268ef1b'
+[2021-02-21T16:43:31.893Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ActionsApi]  [marker:controller_blockingActivation_start:0]
+[2021-02-21T16:43:31.893Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ActionsApi] action activation id: c058bb2efccf4c3298bb2efccf8c32a0 [marker:controller_loadbalancer_start:0]
+[2021-02-21T16:43:31.893Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] deciding on invoker for guest/tripleAndIncrement
+[2021-02-21T16:43:31.893Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] transId: #tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] action: guest/tripleAndIncrement@0.0.1
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] revision: 1-fa876e84c1bc042766cc82f11ed79c5c
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] user: Identity(guest,Namespace(guest,23bc46b1-71f6-4ed5-8c54-816aa4f8c502),23bc46b1-71f6-4ed5-8c54-816aa4f8c502,Set(READ, PUT, DELETE, ACTIVATE),UserLimits(None,None,None,None,None))
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] activationId: c058bb2efccf4c3298bb2efccf8c32a0
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] rootControllerIndex: controller0
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] content: Some({"value":3})
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] initArgs: Set()
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] lockedArgs: Map()
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] cause: Some(ab8658eed74248ef8658eed74268ef1b)
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] traceContext: None
+[2021-02-21T16:43:31.894Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] Number of healthy invokers available: 3
+[2021-02-21T16:43:31.895Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] Invoker char is o -> 111, or mapped: 0
+[2021-02-21T16:43:31.895Z] [WARN] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [THESIS] Chose invoker0 by deliberate assignment.
+[2021-02-21T16:43:31.895Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] [OWN] scheduled activation c058bb2efccf4c3298bb2efccf8c32a0, action 'guest/tripleAndIncrement@0.0.1', ns 'guest', mem limit 256 MB (std), time limit 60000 ms (std) to invoker0/owdev-invoker-0
+[2021-02-21T16:43:31.895Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id 'c058bb2efccf4c3298bb2efccf8c32a0' [marker:controller_kafka_start:1]
+[2021-02-21T16:43:31.898Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] posted to invoker0[0][3] [marker:controller_kafka_finish:5:4]
+[2021-02-21T16:43:31.903Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ActionsApi]  [marker:controller_loadbalancer_finish:8:8]
+[2021-02-21T16:43:31.993Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] received result ack for 'c058bb2efccf4c3298bb2efccf8c32a0'
+[2021-02-21T16:43:31.993Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ActionsApi]  [marker:controller_blockingActivation_finish:100:100]
+[2021-02-21T16:43:31.995Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(guest/triple) [marker:database_cacheMiss_counter:1]
+[2021-02-21T16:43:31.995Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/triple' [marker:database_getDocument_start:1]
+[2021-02-21T16:43:32.000Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [CouchDbRestStore]  [marker:database_getDocument_finish:6:5]
+[2021-02-21T16:43:32.002Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ActionsApi]  [marker:controller_blockingActivation_start:6]
+[2021-02-21T16:43:32.002Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ActionsApi] action activation id: a615f4aae549418995f4aae549a189f5 [marker:controller_loadbalancer_start:6]
+[2021-02-21T16:43:32.002Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] deciding on invoker for guest/triple
+[2021-02-21T16:43:32.002Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] transId: #tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B
+[2021-02-21T16:43:32.002Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] action: guest/triple@0.0.1
+[2021-02-21T16:43:32.003Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] revision: 1-362d953004d81cc7539ea40c8df38b89
+[2021-02-21T16:43:32.003Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] user: Identity(guest,Namespace(guest,23bc46b1-71f6-4ed5-8c54-816aa4f8c502),23bc46b1-71f6-4ed5-8c54-816aa4f8c502,Set(READ, PUT, DELETE, ACTIVATE),UserLimits(None,None,None,None,None))
+[2021-02-21T16:43:32.003Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] activationId: a615f4aae549418995f4aae549a189f5
+[2021-02-21T16:43:32.003Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] rootControllerIndex: controller0
+[2021-02-21T16:43:32.003Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] content: Some({"value":3})
+[2021-02-21T16:43:32.003Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] initArgs: Set()
+[2021-02-21T16:43:32.006Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] lockedArgs: Map()
+[2021-02-21T16:43:32.006Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] cause: Some(ab8658eed74248ef8658eed74268ef1b)
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] traceContext: None
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] Number of healthy invokers available: 3
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] Invoker char is o -> 111, or mapped: 0
+[2021-02-21T16:43:32.007Z] [WARN] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [THESIS] Chose invoker0 by deliberate assignment.
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] [OWN] scheduled activation a615f4aae549418995f4aae549a189f5, action 'guest/triple@0.0.1', ns 'guest', mem limit 256 MB (std), time limit 60000 ms (std) to invoker0/owdev-invoker-0
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id 'a615f4aae549418995f4aae549a189f5' [marker:controller_kafka_start:7]
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] posted to invoker0[0][4] [marker:controller_kafka_finish:12:5]
+[2021-02-21T16:43:32.007Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ActionsApi]  [marker:controller_loadbalancer_finish:13:7]
+[2021-02-21T16:43:32.028Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_oGU6syCe3mYiB5EgwwC6TkTxoCFf7EZK] [ThesisNetworkBalancer] received completion ack for 'c058bb2efccf4c3298bb2efccf8c32a0', system error=false
+[2021-02-21T16:43:34.168Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] received result ack for 'a615f4aae549418995f4aae549a189f5'
+[2021-02-21T16:43:34.168Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ActionsApi]  [marker:controller_blockingActivation_finish:2174:2168]
+[2021-02-21T16:43:34.168Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ActionsApi]  [marker:controller_blockingActivation_start:0]
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ActionsApi] action activation id: c9aa6f0afaa44695aa6f0afaa4169589 [marker:controller_loadbalancer_start:0]
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] deciding on invoker for guest/tripleAndIncrement
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] transId: #tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] action: guest/tripleAndIncrement@0.0.1
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] revision: 1-fa876e84c1bc042766cc82f11ed79c5c
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] user: Identity(guest,Namespace(guest,23bc46b1-71f6-4ed5-8c54-816aa4f8c502),23bc46b1-71f6-4ed5-8c54-816aa4f8c502,Set(READ, PUT, DELETE, ACTIVATE),UserLimits(None,None,None,None,None))
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] activationId: c9aa6f0afaa44695aa6f0afaa4169589
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] rootControllerIndex: controller0
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] content: Some({"$step":1,"value":9})
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] initArgs: Set()
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] lockedArgs: Map()
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] cause: Some(ab8658eed74248ef8658eed74268ef1b)
+[2021-02-21T16:43:34.169Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] traceContext: None
+[2021-02-21T16:43:34.170Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] Number of healthy invokers available: 3
+[2021-02-21T16:43:34.170Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] Invoker char is o -> 111, or mapped: 0
+[2021-02-21T16:43:34.170Z] [WARN] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [THESIS] Chose invoker0 by deliberate assignment.
+[2021-02-21T16:43:34.170Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] [OWN] scheduled activation c9aa6f0afaa44695aa6f0afaa4169589, action 'guest/tripleAndIncrement@0.0.1', ns 'guest', mem limit 256 MB (std), time limit 60000 ms (std) to invoker0/owdev-invoker-0
+[2021-02-21T16:43:34.170Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id 'c9aa6f0afaa44695aa6f0afaa4169589' [marker:controller_kafka_start:1]
+[2021-02-21T16:43:34.171Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] posted to invoker0[0][5] [marker:controller_kafka_finish:3:2]
+[2021-02-21T16:43:34.171Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ActionsApi]  [marker:controller_loadbalancer_finish:3:3]
+[2021-02-21T16:43:34.181Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_QQGTnivzP6ZUuhgDFKCVhpYAZFcEhO4B] [ThesisNetworkBalancer] received completion ack for 'a615f4aae549418995f4aae549a189f5', system error=false
+[2021-02-21T16:43:34.197Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] received result ack for 'c9aa6f0afaa44695aa6f0afaa4169589'
+[2021-02-21T16:43:34.197Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ActionsApi]  [marker:controller_blockingActivation_finish:29:29]
+[2021-02-21T16:43:34.200Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(guest/increment) [marker:database_cacheMiss_counter:2]
+[2021-02-21T16:43:34.200Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: guest/increment' [marker:database_getDocument_start:2]
+[2021-02-21T16:43:34.208Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [CouchDbRestStore]  [marker:database_getDocument_finish:11:8]
+[2021-02-21T16:43:34.209Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ActionsApi]  [marker:controller_blockingActivation_start:12]
+[2021-02-21T16:43:34.209Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ActionsApi] action activation id: 454eb2e23b0a48878eb2e23b0a6887b2 [marker:controller_loadbalancer_start:12]
+[2021-02-21T16:43:34.209Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] deciding on invoker for guest/increment
+[2021-02-21T16:43:34.209Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] transId: #tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV
+[2021-02-21T16:43:34.209Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] action: guest/increment@0.0.1
+[2021-02-21T16:43:34.209Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] revision: 1-c9210e1b87d9a6bbb37f5dacb3bd96e8
+[2021-02-21T16:43:34.211Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] user: Identity(guest,Namespace(guest,23bc46b1-71f6-4ed5-8c54-816aa4f8c502),23bc46b1-71f6-4ed5-8c54-816aa4f8c502,Set(READ, PUT, DELETE, ACTIVATE),UserLimits(None,None,None,None,None))
+[2021-02-21T16:43:34.211Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] activationId: 454eb2e23b0a48878eb2e23b0a6887b2
+[2021-02-21T16:43:34.211Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] rootControllerIndex: controller0
+[2021-02-21T16:43:34.211Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] content: Some({"value":9})
+[2021-02-21T16:43:34.211Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] initArgs: Set()
+[2021-02-21T16:43:34.211Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] lockedArgs: Map()
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] cause: Some(ab8658eed74248ef8658eed74268ef1b)
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] traceContext: None
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] Number of healthy invokers available: 3
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] Invoker char is o -> 111, or mapped: 0
+[2021-02-21T16:43:34.212Z] [WARN] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [THESIS] Chose invoker0 by deliberate assignment.
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] [OWN] scheduled activation 454eb2e23b0a48878eb2e23b0a6887b2, action 'guest/increment@0.0.1', ns 'guest', mem limit 256 MB (std), time limit 60000 ms (std) to invoker0/owdev-invoker-0
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id '454eb2e23b0a48878eb2e23b0a6887b2' [marker:controller_kafka_start:13]
+[2021-02-21T16:43:34.212Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_H3virUqFCBrkRpchk6C1kXfLqzs5OgGm] [ThesisNetworkBalancer] received completion ack for 'c9aa6f0afaa44695aa6f0afaa4169589', system error=false
+[2021-02-21T16:43:34.214Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] posted to invoker0[0][6] [marker:controller_kafka_finish:16:3]
+[2021-02-21T16:43:34.214Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ActionsApi]  [marker:controller_loadbalancer_finish:16:4]
+[2021-02-21T16:43:34.304Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] received result ack for '454eb2e23b0a48878eb2e23b0a6887b2'
+[2021-02-21T16:43:34.304Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ActionsApi]  [marker:controller_blockingActivation_finish:107:95]
+[2021-02-21T16:43:34.304Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ActionsApi]  [marker:controller_blockingActivation_start:0]
+[2021-02-21T16:43:34.304Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ActionsApi] action activation id: b8e54d5b911a4019a54d5b911a10192e [marker:controller_loadbalancer_start:0]
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] deciding on invoker for guest/tripleAndIncrement
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] transId: #tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] action: guest/tripleAndIncrement@0.0.1
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] revision: 1-fa876e84c1bc042766cc82f11ed79c5c
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] user: Identity(guest,Namespace(guest,23bc46b1-71f6-4ed5-8c54-816aa4f8c502),23bc46b1-71f6-4ed5-8c54-816aa4f8c502,Set(READ, PUT, DELETE, ACTIVATE),UserLimits(None,None,None,None,None))
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] activationId: b8e54d5b911a4019a54d5b911a10192e
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] rootControllerIndex: controller0
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] content: Some({"$step":2,"value":10})
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] initArgs: Set()
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] lockedArgs: Map()
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] cause: Some(ab8658eed74248ef8658eed74268ef1b)
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] traceContext: None
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] Number of healthy invokers available: 3
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] Invoker char is o -> 111, or mapped: 0
+[2021-02-21T16:43:34.305Z] [WARN] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [THESIS] Chose invoker0 by deliberate assignment.
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] [OWN] scheduled activation b8e54d5b911a4019a54d5b911a10192e, action 'guest/tripleAndIncrement@0.0.1', ns 'guest', mem limit 256 MB (std), time limit 60000 ms (std) to invoker0/owdev-invoker-0
+[2021-02-21T16:43:34.305Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] posting topic 'invoker0' with activation id 'b8e54d5b911a4019a54d5b911a10192e' [marker:controller_kafka_start:1]
+[2021-02-21T16:43:34.307Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] posted to invoker0[0][7] [marker:controller_kafka_finish:3:2]
+[2021-02-21T16:43:34.307Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ActionsApi]  [marker:controller_loadbalancer_finish:3:3]
+[2021-02-21T16:43:34.315Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_TDzgoCTnV9xoQgIHCoxRXY6PExDHuRsV] [ThesisNetworkBalancer] received completion ack for '454eb2e23b0a48878eb2e23b0a6887b2', system error=false
+[2021-02-21T16:43:34.324Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] received result ack for 'b8e54d5b911a4019a54d5b911a10192e'
+[2021-02-21T16:43:34.324Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ActionsApi]  [marker:controller_blockingActivation_finish:20:20]
+[2021-02-21T16:43:34.332Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [#tid_jBhiVLy10NqxNBnsElv7HBKzH0qAngdc] [ThesisNetworkBalancer] received completion ack for 'b8e54d5b911a4019a54d5b911a10192e', system error=false
+[2021-02-21T16:43:34.335Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [CouchDbRestStore] [PUT] 'test_activations' saving document: 'id: guest/ab8658eed74248ef8658eed74268ef1b, rev: null' [marker:database_saveDocument_start:2454]
+[2021-02-21T16:43:34.336Z] [INFO] [#tid_sid_dbBatcher] [CouchDbRestStore] 'test_activations' saving 1 documents [marker:database_saveDocumentBulk_start:162960]
+[2021-02-21T16:43:34.336Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [BasicHttpService] [marker:http_post.200_counter:2455:2455]
+[2021-02-21T16:43:34.346Z] [INFO] [#tid_sid_dbBatcher] [CouchDbRestStore]  [marker:database_saveDocumentBulk_finish:162970:10]
+[2021-02-21T16:43:34.351Z] [INFO] [#tid_QBB1RqQRV1PtZwIlKGbrlM02DUnun4MC] [CouchDbRestStore]  [marker:database_saveDocument_finish:2470:16]
+[2021-02-21T16:43:34.355Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] GET /api/v1/namespaces/_/actions/messaging/messageHubFeed code=false
+[2021-02-21T16:43:34.355Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:34.356Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:34.357Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:34.357Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:34.373Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:19]
+[2021-02-21T16:43:34.388Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:34]
+[2021-02-21T16:43:34.388Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/messaging/messageHubFeed) [marker:database_cacheMiss_counter:34]
+[2021-02-21T16:43:34.388Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/messageHubFeed' [marker:database_getDocument_start:34]
+[2021-02-21T16:43:34.391Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [CouchDbRestStore]  [marker:database_getDocument_finish:37:3]
+[2021-02-21T16:43:34.391Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [WhiskActionMetaData] invalidating CacheKey(whisk.system/messaging/messageHubFeed)
+[2021-02-21T16:43:34.391Z] [INFO] [#tid_5jDZGqjykQnJ97pTA7WG9hnbeL8ETWpZ] [BasicHttpService] [marker:http_get.404_counter:37:37]
+[2021-02-21T16:43:34.430Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] PUT /api/v1/namespaces/_/actions/messaging/messageHubFeed overwrite=true
+[2021-02-21T16:43:34.436Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:34.436Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:6]
+[2021-02-21T16:43:34.437Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:34.965Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/messaging/messageHubFeed) [marker:database_cacheMiss_counter:535]
+[2021-02-21T16:43:34.966Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/messageHubFeed' [marker:database_getDocument_start:535]
+[2021-02-21T16:43:34.968Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [CouchDbRestStore]  [marker:database_getDocument_finish:538:3]
+[2021-02-21T16:43:34.968Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [WhiskAction] invalidating CacheKey(whisk.system/messaging/messageHubFeed)
+[2021-02-21T16:43:34.980Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:34.982Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messaging/messageHubFeed, rev: null' [marker:database_saveDocument_start:552]
+[2021-02-21T16:43:34.995Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [CouchDbRestStore]  [marker:database_saveDocument_finish:565:13]
+[2021-02-21T16:43:34.996Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '195cafad-4e59-411a-9caf-ad4e59b11a34' of document 'id: whisk.system/messaging/messageHubFeed, rev: 1-3e18525309b4056e688121794b7d26f5' [marker:database_saveDocumentAttachment_start:566]
+[2021-02-21T16:43:35.110Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:680:114]
+[2021-02-21T16:43:35.131Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [WhiskAction] write all done, caching CacheKey(whisk.system/messaging/messageHubFeed) Cached
+[2021-02-21T16:43:35.178Z] [INFO] [#tid_ddOnlxcXAiGdvIGme4BD1XRrQs83j14s] [BasicHttpService] [marker:http_put.200_counter:747:747]
+[2021-02-21T16:43:35.298Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] PUT /api/v1/namespaces/_/packages/messagingWeb overwrite=true
+[2021-02-21T16:43:35.299Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:35.299Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:35.301Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:35.301Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [WhiskPackage] write initiated on existing cache entry, invalidating CacheKey(whisk.system/messagingWeb), tid M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ, state WriteInProgress
+[2021-02-21T16:43:35.301Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messagingWeb, rev: 1-f92edda9fd425fd9d828291c7bab5ab4' [marker:database_saveDocument_start:3]
+[2021-02-21T16:43:35.308Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [CouchDbRestStore]  [marker:database_saveDocument_finish:10:7]
+[2021-02-21T16:43:35.308Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [WhiskPackage] write all done, caching CacheKey(whisk.system/messagingWeb) Cached
+[2021-02-21T16:43:35.309Z] [INFO] [#tid_M3EjHpxWVGUeaaw59Jk2fUDoKosKMPcQ] [BasicHttpService] [marker:http_put.200_counter:11:11]
+[2021-02-21T16:43:40.881Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] GET /api/v1/namespaces/_/actions/messagingWeb/messageHubFeedWeb code=false
+[2021-02-21T16:43:40.882Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:40.883Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:40.884Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:40.884Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:3]
+[2021-02-21T16:43:40.899Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:18]
+[2021-02-21T16:43:40.914Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:33]
+[2021-02-21T16:43:40.914Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/messagingWeb/messageHubFeedWeb) [marker:database_cacheMiss_counter:33]
+[2021-02-21T16:43:40.915Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messagingWeb/messageHubFeedWeb' [marker:database_getDocument_start:33]
+[2021-02-21T16:43:40.917Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [CouchDbRestStore]  [marker:database_getDocument_finish:36:3]
+[2021-02-21T16:43:40.917Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [WhiskActionMetaData] invalidating CacheKey(whisk.system/messagingWeb/messageHubFeedWeb)
+[2021-02-21T16:43:40.918Z] [INFO] [#tid_Zir9dqWoPozzWDlf4BVnXHPZeumqlghl] [BasicHttpService] [marker:http_get.404_counter:37:37]
+[2021-02-21T16:43:40.960Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] PUT /api/v1/namespaces/_/actions/messagingWeb/messageHubFeedWeb overwrite=true
+[2021-02-21T16:43:40.966Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:40.967Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:7]
+[2021-02-21T16:43:40.968Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messagingWeb) [marker:database_cacheHit_counter:8]
+[2021-02-21T16:43:41.436Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/messagingWeb/messageHubFeedWeb) [marker:database_cacheMiss_counter:476]
+[2021-02-21T16:43:41.436Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messagingWeb/messageHubFeedWeb' [marker:database_getDocument_start:476]
+[2021-02-21T16:43:41.438Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [CouchDbRestStore]  [marker:database_getDocument_finish:478:2]
+[2021-02-21T16:43:41.438Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [WhiskAction] invalidating CacheKey(whisk.system/messagingWeb/messageHubFeedWeb)
+[2021-02-21T16:43:41.450Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:41.452Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messagingWeb/messageHubFeedWeb, rev: null' [marker:database_saveDocument_start:492]
+[2021-02-21T16:43:41.462Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [CouchDbRestStore]  [marker:database_saveDocument_finish:502:10]
+[2021-02-21T16:43:41.462Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [CouchDbRestStore] [ATT_PUT] 'test_whisks' uploading attachment '889d8a06-29b9-4519-9d8a-0629b925190b' of document 'id: whisk.system/messagingWeb/messageHubFeedWeb, rev: 1-65a59a21f67394c1f38a53dc8565f425' [marker:database_saveDocumentAttachment_start:502]
+[2021-02-21T16:43:41.562Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [CouchDbRestStore]  [marker:database_saveDocumentAttachment_finish:602:100]
+[2021-02-21T16:43:41.595Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [WhiskAction] write all done, caching CacheKey(whisk.system/messagingWeb/messageHubFeedWeb) Cached
+[2021-02-21T16:43:41.624Z] [INFO] [#tid_pENGQWJ0bxcnjwupMYrGPe1m58qOt7ce] [BasicHttpService] [marker:http_put.200_counter:663:663]
+[2021-02-21T16:43:41.746Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] GET /api/v1/namespaces/_/actions/messaging/messageHubProduce code=false
+[2021-02-21T16:43:41.747Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:41.747Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:41.748Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:41.748Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:41.773Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:27]
+[2021-02-21T16:43:41.788Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:42]
+[2021-02-21T16:43:41.788Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [WhiskActionMetaData] [GET] serving from datastore: CacheKey(whisk.system/messaging/messageHubProduce) [marker:database_cacheMiss_counter:42]
+[2021-02-21T16:43:41.788Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/messageHubProduce' [marker:database_getDocument_start:42]
+[2021-02-21T16:43:41.790Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [CouchDbRestStore]  [marker:database_getDocument_finish:44:2]
+[2021-02-21T16:43:41.790Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [WhiskActionMetaData] invalidating CacheKey(whisk.system/messaging/messageHubProduce)
+[2021-02-21T16:43:41.791Z] [INFO] [#tid_35KC497ozCwtONR0bvNqD31Aj06Pb3B2] [BasicHttpService] [marker:http_get.404_counter:45:45]
+[2021-02-21T16:43:41.794Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] PUT /api/v1/namespaces/_/actions/messaging/messageHubProduce overwrite=true
+[2021-02-21T16:43:41.794Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [BasicAuthenticationDirective] authenticate: 789c46b1-71f6-4ed5-8c54-816aa4f8c502
+[2021-02-21T16:43:41.794Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [Identity] [GET] serving from cache: CacheKey(789c46b1-71f6-4ed5-8c54-816aa4f8c502) [marker:database_cacheHit_counter:1]
+[2021-02-21T16:43:41.795Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [WhiskPackage] [GET] serving from cache: CacheKey(whisk.system/messaging) [marker:database_cacheHit_counter:2]
+[2021-02-21T16:43:41.796Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [WhiskAction] [GET] serving from datastore: CacheKey(whisk.system/messaging/messageHubProduce) [marker:database_cacheMiss_counter:3]
+[2021-02-21T16:43:41.796Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [CouchDbRestStore] [GET] 'test_whisks' finding document: 'id: whisk.system/messaging/messageHubProduce' [marker:database_getDocument_start:3]
+[2021-02-21T16:43:41.798Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [CouchDbRestStore]  [marker:database_getDocument_finish:5:2]
+[2021-02-21T16:43:41.798Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [WhiskAction] invalidating CacheKey(whisk.system/messaging/messageHubProduce)
+[2021-02-21T16:43:41.799Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [WhiskAction] write initiated on new cache entry
+[2021-02-21T16:43:41.800Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [CouchDbRestStore] [PUT] 'test_whisks' saving document: 'id: whisk.system/messaging/messageHubProduce, rev: null' [marker:database_saveDocument_start:7]
+[2021-02-21T16:43:41.807Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [CouchDbRestStore]  [marker:database_saveDocument_finish:14:7]
+[2021-02-21T16:43:41.807Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [WhiskAction] write all done, caching CacheKey(whisk.system/messaging/messageHubProduce) Cached
+[2021-02-21T16:43:41.808Z] [INFO] [#tid_3VgnIKdwTDSPfpWw1e3u47QCsy3h6HQI] [BasicHttpService] [marker:http_put.200_counter:15:15]
